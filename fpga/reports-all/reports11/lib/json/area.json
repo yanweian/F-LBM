@@ -1,0 +1,4802 @@
+{
+  "columns":
+  ["", "ALUTs", "FFs", "RAMs", "DSPs", "MLABs", "Details"]
+  , "debug_enabled":"true"
+  , "type":"module"
+  , "total_percent":
+  [27.6004, 15.5343, 13.2004, 31.8098, 4.80896]
+  , "total":
+  [123465, 225569, 863, 73, 463]
+  , "name":"Kernel System"
+  , "max_resources":
+  [854400, 1708800, 2713, 1518, 42720]
+  , "children":
+  [
+    {
+      "name":"Static Partition"
+      , "type":"partition"
+      , "children":
+      [
+        {
+          "name":"Board interface"
+          , "type":"resource"
+          , "data":
+          [66866, 133600, 179, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Platform interface logic."
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Global interconnect"
+      , "type":"resource"
+      , "data":
+      [2898, 4787, 61, 0, 0]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Global interconnect for 7 global loads and 3 global stores. Reduce number of global loads and stores to simplify global interconnect."
+        }
+        , {
+          "type":"brief"
+          , "text":"For 7 global loads and 3 global stores."
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Global Memory Interconnect"
+              , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/hnj1476724450050.html"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"System description ROM"
+      , "type":"resource"
+      , "data":
+      [0, 67, 2, 0, 0]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"This read-only memory contains information for the host about the system and about each kernel in the system, including kernel names, arguments, and attributes. The system description ROM ensures that the binary image on the FPGA is compatible with the host program."
+        }
+        , {
+          "type":"brief"
+          , "text":"Contains information for the host."
+        }
+      ]
+    }
+    , {
+      "name":"Pipe and channel resources"
+      , "type":"group"
+      , "children":
+      [
+        {
+          "name":"lbm.cl:47 (CELL_EDGE_ENTRY_CHANNEL)"
+          , "type":"resource"
+          , "data":
+          [38, 4116, 26, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":47
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Channel is implemented 512 bits wide by 1024 deep."
+            }
+            , {
+              "type":"brief"
+              , "text":"512b wide by 1024 deep."
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Channels"
+                  , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/qah1476410829821.html"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"lbm.cl:48 (CELL_ENTRY_CHANNEL)"
+          , "type":"resource"
+          , "data":
+          [38, 3604, 23, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":48
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Channel is implemented 448 bits wide by 1024 deep."
+            }
+            , {
+              "type":"brief"
+              , "text":"448b wide by 1024 deep."
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Channels"
+                  , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/qah1476410829821.html"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"lbm.cl:49 (CELL_U_CHANNEL)"
+          , "type":"resource"
+          , "data":
+          [38, 1044, 7, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":49
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Channel is implemented 128 bits wide by 1024 deep."
+            }
+            , {
+              "type":"brief"
+              , "text":"128b wide by 1024 deep."
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Channels"
+                  , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/qah1476410829821.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"collision"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [1.23546, 0.885183, 0.445576, 0.110579, 0.922266]
+      , "total_kernel_resources":
+      [4703.3, 7613.76, 3, 13.5, 143]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"text"
+          , "text":"Kernel attribute 'uses_global_work_offset' not specified. Add '__attribute__((uses_global_work_offset(0)))' to reduce area utilization if the kernel will always be enqueued with a 0 or NULL global_work_offset argument in clEnqueueNDRangeKernel. Add '__attribute__((uses_global_work_offset(1)))' to hide this suggestion without affecting kernel functionality."
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit.\nKernel attribute 'uses_global_work_offset' not specified. Add '__attribute__((uses_global_work_offset(0)))' to reduce area utilization if the kernel will always be enqueued with a 0 or NULL global_work_offset argument in clEnqueueNDRangeKernel. Add '__attribute__((uses_global_work_offset(1)))' to hide this suggestion without affecting kernel functionality."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Function overhead"
+          , "type":"resource"
+          , "data":
+          [1274.3, 2687.76, 0, 0, 10]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Kernel dispatch logic."
+            }
+            , {
+              "type":"brief"
+              , "text":"Kernel dispatch logic."
+            }
+          ]
+        }
+        , {
+          "name":"lbm.cl:338 (local_cell)"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0, 28]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":338
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Local memory":"Stall-Free"
+              , "Requested size":"56 bytes"
+              , "Implemented size":"320 bytes"
+              , "Number of banks":"16 (banked on bits 2, 3, 4, 5)"
+              , "Bank width":"32 bits"
+              , "Bank depth":"1 word"
+              , "Total replication":"5"
+              , "Additional information":
+              [
+                {
+                  "type":"text"
+                  , "text":"Requested size 56 bytes, implemented size 320 bytes, replicated 5 times total, stall-free, 6 reads and 14 writes. "
+                }
+                , {
+                  "type":"text"
+                  , "text":"Replicated 5 times to efficiently support multiple simultaneous workgroups. This replication resulted in no increase in actual block RAM usage."
+                }
+                , {
+                  "type":"text"
+                  , "text":"Banked on bits 2, 3, 4, 5 into 16 separate banks."
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information."
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Local Memory"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/chn1469549457114.html"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"brief"
+              , "text":"Stall-Free,\n56B requested,\n320B implemented."
+            }
+          ]
+        }
+        , {
+          "name":"collision.B0"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [402, 1411, 0, 0, 74]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [402, 1411, 0, 0, 74]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [8, 7, 3, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"lbm.cl:339"
+                  , "type":"resource"
+                  , "data":
+                  [11, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":339
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [11, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:341"
+                  , "type":"resource"
+                  , "data":
+                  [477, 336, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":341
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Channel Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":14
+                      , "data":
+                      [476, 336, 0, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Local-pipelined never-stall LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Local-pipelined never-stall LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Stall-free write to memory declared on %L."
+                          , "links":
+                          [
+                            {
+                              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                              , "line":"338"
+                            }
+                          ]
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"See %L for more information"
+                          , "links":
+                          [
+                            {
+                              "guide":"Best Practices Guide : Load-Store Units"
+                              , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:343"
+                  , "type":"resource"
+                  , "data":
+                  [4, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":343
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"8-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:345"
+                  , "type":"resource"
+                  , "data":
+                  [10, 9, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":345
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Channel Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [10, 9, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:351"
+                  , "type":"resource"
+                  , "data":
+                  [22, 9, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":351
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":13
+                      , "data":
+                      [13, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"llvm.fpga.simple.barrier"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [9, 9, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:353"
+                  , "type":"resource"
+                  , "data":
+                  [710, 323, 0, 1, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":353
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Floating-point to Integer Conversion"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [289, 69, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer to Floating-point Conversion"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [362, 172, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Hardened Floating-point Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0, 0, 0, 1, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [26, 41, 0, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Local-pipelined never-stall LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Local-pipelined never-stall LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Stall-free read from memory declared on %L."
+                          , "links":
+                          [
+                            {
+                              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                              , "line":"338"
+                            }
+                          ]
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"See %L for more information"
+                          , "links":
+                          [
+                            {
+                              "guide":"Best Practices Guide : Load-Store Units"
+                              , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"On-chip Read-Only Memory Lookup"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [16, 8, 0, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Read from 576 bit ROM. "
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Read from 576 bit ROM. A copy of the ROM is created for each access."
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"llvm.fpga.wg.limiter.exit"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [17, 33, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:354"
+                  , "type":"resource"
+                  , "data":
+                  [710, 323, 0, 1, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":354
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Floating-point to Integer Conversion"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [289, 69, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer to Floating-point Conversion"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [362, 172, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Hardened Floating-point Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0, 0, 0, 1, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [26, 41, 0, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Local-pipelined never-stall LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Local-pipelined never-stall LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Stall-free read from memory declared on %L."
+                          , "links":
+                          [
+                            {
+                              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                              , "line":"338"
+                            }
+                          ]
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"See %L for more information"
+                          , "links":
+                          [
+                            {
+                              "guide":"Best Practices Guide : Load-Store Units"
+                              , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"On-chip Read-Only Memory Lookup"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [16, 8, 0, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Read from 576 bit ROM. "
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Read from 576 bit ROM. A copy of the ROM is created for each access."
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"llvm.fpga.wg.limiter.exit"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [17, 33, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:355"
+                  , "type":"resource"
+                  , "data":
+                  [207, 4, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":355
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [3, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [64, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [140, 4, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:356 > lbm.cl:98"
+                  , "type":"resource"
+                  , "data":
+                  [128, 0, 0, 1.5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":356
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":98
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [96, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 1.5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:358"
+                  , "type":"resource"
+                  , "data":
+                  [564, 2426, 0, 0, 31]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":358
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [104, 164, 0, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Local-pipelined never-stall LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Local-pipelined never-stall LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Stall-free read from memory declared on %L."
+                          , "links":
+                          [
+                            {
+                              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                              , "line":"338"
+                            }
+                          ]
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"See %L for more information"
+                          , "links":
+                          [
+                            {
+                              "guide":"Best Practices Guide : Load-Store Units"
+                              , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"On-chip Read-Only Memory Lookup"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [2, 2, 0, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Read from 288 bit ROM. "
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Read from 288 bit ROM. A copy of the ROM is created for each access."
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [390, 2128, 0, 0, 31]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"llvm.fpga.wg.limiter.exit"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [68, 132, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:358 > lbm.cl:78"
+                  , "type":"resource"
+                  , "data":
+                  [0, 0, 0, 2, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":358
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":78
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Floating-point Sub"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [0, 0, 0, 2, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:358 > lbm.cl:78 > \nlbm.cl:63"
+                  , "type":"resource"
+                  , "data":
+                  [0, 0, 0, 1, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":358
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":78
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":63
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Floating-point Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0, 0, 0, 1, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:358 > lbm.cl:78 > \nlbm.cl:63 > lbm.cl:54"
+                  , "type":"resource"
+                  , "data":
+                  [0, 0, 0, 2, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":358
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":78
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":63
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":54
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Floating-Point Dot Product of Size 2"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0, 0, 0, 2, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:358 > lbm.cl:78 > \nlbm.cl:64"
+                  , "type":"resource"
+                  , "data":
+                  [176, 77, 0, 2, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":358
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":78
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":64
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Floating-Point Dot Product of Size 2"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0, 0, 0, 2, 0]
+                    }
+                    , {
+                      "name":"Hardened Floating-point Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [176, 77, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:358 > lbm.cl:78 > \nlbm.cl:65"
+                  , "type":"resource"
+                  , "data":
+                  [0, 0, 0, 1, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":358
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":78
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":65
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Floating-point Sub"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0, 0, 0, 1, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:358 > lbm.cl:78 > \nlbm.cl:65 > lbm.cl:54"
+                  , "type":"resource"
+                  , "data":
+                  [0, 0, 0, 2, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":358
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":78
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":65
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":54
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Floating-Point Dot Product of Size 2"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0, 0, 0, 2, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"edge"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [1.01069, 0.623595, 0.441479, 0.147438, 1.25165]
+      , "total_kernel_resources":
+      [3528, 7544.32, 4, 18.5, 90]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"text"
+          , "text":"Kernel attribute 'uses_global_work_offset' not specified. Add '__attribute__((uses_global_work_offset(0)))' to reduce area utilization if the kernel will always be enqueued with a 0 or NULL global_work_offset argument in clEnqueueNDRangeKernel. Add '__attribute__((uses_global_work_offset(1)))' to hide this suggestion without affecting kernel functionality."
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit.\nKernel attribute 'uses_global_work_offset' not specified. Add '__attribute__((uses_global_work_offset(0)))' to reduce area utilization if the kernel will always be enqueued with a 0 or NULL global_work_offset argument in clEnqueueNDRangeKernel. Add '__attribute__((uses_global_work_offset(1)))' to hide this suggestion without affecting kernel functionality."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Function overhead"
+          , "type":"resource"
+          , "data":
+          [1106, 2567.32, 0, 0, 10]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Kernel dispatch logic."
+            }
+            , {
+              "type":"brief"
+              , "text":"Kernel dispatch logic."
+            }
+          ]
+        }
+        , {
+          "name":"lbm.cl:366 (local_cell_edge)"
+          , "type":"resource"
+          , "data":
+          [257, 2048, 0, 0, 13]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":366
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Local memory":"Stall-Free"
+              , "Requested size":"64 bytes"
+              , "Implemented size":"192 bytes"
+              , "Number of banks":"1"
+              , "Bank width":"256 bits"
+              , "Bank depth":"2 words"
+              , "Total replication":"3"
+              , "Clock":"Running memory at 2x clock to support more concurrent ports"
+              , "Additional information":
+              [
+                {
+                  "type":"text"
+                  , "text":"Requested size 64 bytes, implemented size 192 bytes, replicated 3 times total, stall-free, 2 reads and 2 writes. "
+                }
+                , {
+                  "type":"text"
+                  , "text":"Replicated 3 times to efficiently support multiple simultaneous workgroups. This replication resulted in no increase in actual block RAM usage."
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information."
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Local Memory"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/chn1469549457114.html"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"brief"
+              , "text":"Stall-Free,\n64B requested,\n192B implemented."
+            }
+          ]
+        }
+        , {
+          "name":"edge.B0"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [210, 789, 0, 0, 35]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [210, 789, 0, 0, 35]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [8, 7, 4, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"lbm.cl:367"
+                  , "type":"resource"
+                  , "data":
+                  [11, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":367
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [11, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:368"
+                  , "type":"resource"
+                  , "data":
+                  [69, 48, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":368
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Channel Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [68, 48, 0, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Local-pipelined never-stall LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Local-pipelined never-stall LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Stall-free write to memory declared on %L."
+                          , "links":
+                          [
+                            {
+                              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                              , "line":"366"
+                            }
+                          ]
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"See %L for more information"
+                          , "links":
+                          [
+                            {
+                              "guide":"Best Practices Guide : Load-Store Units"
+                              , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:371"
+                  , "type":"resource"
+                  , "data":
+                  [10, 9, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":371
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"llvm.fpga.simple.barrier"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [9, 9, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:373"
+                  , "type":"resource"
+                  , "data":
+                  [1377, 1922, 0, 0, 32]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":373
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":5
+                      , "data":
+                      [164, 306, 0, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Local-pipelined never-stall LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Local-pipelined never-stall LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Stall-free read from memory declared on %L."
+                          , "links":
+                          [
+                            {
+                              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                              , "line":"366"
+                            }
+                          ]
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"See %L for more information"
+                          , "links":
+                          [
+                            {
+                              "guide":"Best Practices Guide : Load-Store Units"
+                              , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"On-chip Read-Only Memory Lookup"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [34, 18, 0, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Read from 288 bit ROM. "
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Read from 288 bit ROM. A copy of the ROM is created for each access."
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Read from 576 bit ROM. "
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Read from 576 bit ROM. A copy of the ROM is created for each access."
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1162, 1565, 0, 0, 32]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Streaming LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Streaming LSU"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"llvm.fpga.wg.limiter.exit"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [17, 33, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:373 > lbm.cl:91"
+                  , "type":"resource"
+                  , "data":
+                  [0, 0, 0, 2, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":373
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":91
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Floating-Point Multiply-Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0, 0, 0, 1, 0]
+                    }
+                    , {
+                      "name":"Hardened Floating-point Sub"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0, 0, 0, 1, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:373 > lbm.cl:91 > \nlbm.cl:63"
+                  , "type":"resource"
+                  , "data":
+                  [0, 0, 0, 1, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":373
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":91
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":63
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Floating-point Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0, 0, 0, 1, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:373 > lbm.cl:91 > \nlbm.cl:63 > lbm.cl:54"
+                  , "type":"resource"
+                  , "data":
+                  [0, 0, 0, 4, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":373
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":91
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":63
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":54
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Floating-Point Dot Product of Size 2"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [0, 0, 0, 4, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:373 > lbm.cl:91 > \nlbm.cl:64"
+                  , "type":"resource"
+                  , "data":
+                  [352, 154, 0, 4, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":373
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":91
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":64
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Floating-Point Dot Product of Size 2"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [0, 0, 0, 4, 0]
+                    }
+                    , {
+                      "name":"Hardened Floating-point Multiply"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [352, 154, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:373 > lbm.cl:91 > \nlbm.cl:65"
+                  , "type":"resource"
+                  , "data":
+                  [0, 0, 0, 2, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":373
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":91
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":65
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Floating-point Sub"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [0, 0, 0, 2, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:373 > lbm.cl:91 > \nlbm.cl:65 > lbm.cl:54"
+                  , "type":"resource"
+                  , "data":
+                  [0, 0, 0, 4, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":373
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":91
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":65
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":54
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Floating-Point Dot Product of Size 2"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [0, 0, 0, 4, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:373 > lbm.cl:98"
+                  , "type":"resource"
+                  , "data":
+                  [128, 0, 0, 1.5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":373
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":98
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [96, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 1.5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"lbm"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [8.341, 5.45904, 3.40408, 20.5676, 2.56917]
+      , "total_kernel_resources":
+      [43122, 58169, 558, 39, 176]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"text"
+          , "text":"Kernel attribute 'uses_global_work_offset' not specified. Add '__attribute__((uses_global_work_offset(0)))' to reduce area utilization if the kernel will always be enqueued with a 0 or NULL global_work_offset argument in clEnqueueNDRangeKernel. Add '__attribute__((uses_global_work_offset(1)))' to hide this suggestion without affecting kernel functionality."
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit.\nKernel attribute 'uses_global_work_offset' not specified. Add '__attribute__((uses_global_work_offset(0)))' to reduce area utilization if the kernel will always be enqueued with a 0 or NULL global_work_offset argument in clEnqueueNDRangeKernel. Add '__attribute__((uses_global_work_offset(1)))' to hide this suggestion without affecting kernel functionality."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Function overhead"
+          , "type":"resource"
+          , "data":
+          [1338, 2411, 0, 0, 10]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Kernel dispatch logic."
+            }
+            , {
+              "type":"brief"
+              , "text":"Kernel dispatch logic."
+            }
+          ]
+        }
+        , {
+          "name":"Coalesced Private Variables: \n - 'x' (lbm.cl:104)\n - 'x_edge' (lbm.cl:235)\n - 'x_edge' (lbm.cl:299)"
+          , "type":"resource"
+          , "data":
+          [24, 101, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":104
+              }
+            ]
+            , [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":235
+              }
+            ]
+            , [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":299
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32 and depth 1"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 32 width by 1 depth"
+            }
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'y' (lbm.cl:105)"
+          , "type":"resource"
+          , "data":
+          [103, 185, 0, 0, 2]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":105
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32 and depth 11 (depth was increased by a factor of 8 due to a loop initiation interval of 8.)"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 32 width by 11 depth"
+            }
+          ]
+        }
+        , {
+          "name":"lbm.B0"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [72, 489, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [68, 322, 0, 0, 0]
+                }
+                , {
+                  "name":"lbm.cl:104"
+                  , "type":"resource"
+                  , "data":
+                  [1, 68, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":104
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"lbm.cl:128"
+                  , "type":"resource"
+                  , "data":
+                  [1, 33, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":128
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"lbm.cl:163"
+                  , "type":"resource"
+                  , "data":
+                  [1, 33, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":163
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"lbm.cl:211 > lbm.cl:98"
+                  , "type":"resource"
+                  , "data":
+                  [1, 33, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":211
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":98
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [7, 2, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"lbm.cl:102"
+                  , "type":"resource"
+                  , "data":
+                  [7, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":102
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"lbm.cl:104"
+                  , "type":"resource"
+                  , "data":
+                  [363, 3, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":104
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":5
+                      , "data":
+                      [160, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [105, 3, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [66, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:128"
+                  , "type":"resource"
+                  , "data":
+                  [32, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":128
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:163"
+                  , "type":"resource"
+                  , "data":
+                  [32, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":163
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:211 > lbm.cl:98"
+                  , "type":"resource"
+                  , "data":
+                  [32, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":211
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":98
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"lbm.B1"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [169, 658, 0, 0, 2]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [169, 658, 0, 0, 2]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [24, 46, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"lbm.cl:104"
+                  , "type":"resource"
+                  , "data":
+                  [15.3333, 44, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":104
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"lbm.cl:164"
+                  , "type":"resource"
+                  , "data":
+                  [0.666667, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":164
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"lbm.cl:314"
+                  , "type":"resource"
+                  , "data":
+                  [8, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":314
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [6, 5, 0, 0, 15]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"lbm.cl:104"
+                  , "type":"resource"
+                  , "data":
+                  [111, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":104
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [48, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [33, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [11, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Select"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [18, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:105"
+                  , "type":"resource"
+                  , "data":
+                  [68, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":105
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [35, 1, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:164"
+                  , "type":"resource"
+                  , "data":
+                  [9, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":164
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"33-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [9, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:211 > lbm.cl:98"
+                  , "type":"resource"
+                  , "data":
+                  [32, 0, 0, 1.5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":211
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":98
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 1.5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:243 > lbm.cl:98"
+                  , "type":"resource"
+                  , "data":
+                  [96, 0, 0, 1.5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":243
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":98
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [64, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 1.5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:307 > lbm.cl:98"
+                  , "type":"resource"
+                  , "data":
+                  [16, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":307
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":98
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [16, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"lbm.B2"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [27, 19, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"lbm.cl:314"
+                  , "type":"resource"
+                  , "data":
+                  [27, 19, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":314
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"lbm.B3"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [5, 8, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"lbm.cl:331"
+                  , "type":"resource"
+                  , "data":
+                  [5, 8, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":331
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"lbm.B4"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [3897, 7491, 40, 0, 67]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [3897, 7491, 40, 0, 67]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [1006, 1786, 0, 0, 27]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [576, 1143, 0, 0, 12]
+                }
+                , {
+                  "name":"lbm.cl:104"
+                  , "type":"resource"
+                  , "data":
+                  [210.333, 363.333, 0, 0, 5.33333]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":104
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"lbm.cl:105"
+                  , "type":"resource"
+                  , "data":
+                  [71.3333, 102, 0, 0, 5]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":105
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"lbm.cl:130"
+                  , "type":"resource"
+                  , "data":
+                  [7.66667, 11, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":130
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"lbm.cl:164"
+                  , "type":"resource"
+                  , "data":
+                  [41.6667, 72.6667, 0, 0, 0.666667]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":164
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"lbm.cl:314"
+                  , "type":"resource"
+                  , "data":
+                  [50, 48, 0, 0, 2]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":314
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"lbm.cl:327"
+                  , "type":"resource"
+                  , "data":
+                  [49, 46, 0, 0, 2]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":327
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [14, 12, 45, 0, 15]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"lbm.cl:105"
+                  , "type":"resource"
+                  , "data":
+                  [101, 3, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":105
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":7
+                      , "data":
+                      [4, 0.5, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":6
+                      , "data":
+                      [3, 2.5, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [33, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [11, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Select"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [18, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:107 > lbm.cl:98"
+                  , "type":"resource"
+                  , "data":
+                  [146, 199, 0, 1.5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":107
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":98
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [64, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [82, 199, 0, 1.5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:117"
+                  , "type":"resource"
+                  , "data":
+                  [5687, 7517, 82, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":117
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [5687, 7517, 82, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced non-aligned cached LSU.  Load with a private 512 kilobit cache. Cache is not shared with any other load. It is flushed on kernel start. Use Dynamic Profiler to verify cache effectiveness. Other kernels should not be updating the data in global memory while this kernel is using it. Cache is created when memory access pattern is data-dependent or appears to be repetitive. Simplify access pattern or mark pointer as 'volatile' to disable generation of this cache."
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced non-aligned cached LSU,\nLoad with a private 512 kilobit cache"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:118"
+                  , "type":"resource"
+                  , "data":
+                  [0, 0, 0, 9, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":118
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Floating-point Add"
+                      , "type":"resource"
+                      , "count":9
+                      , "data":
+                      [0, 0, 0, 9, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:119"
+                  , "type":"resource"
+                  , "data":
+                  [0, 0, 0, 9, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":119
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Floating-Point Dot Product of Size 2"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0, 0, 0, 2, 0]
+                    }
+                    , {
+                      "name":"Hardened Floating-Point Multiply-Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [0, 0, 0, 2, 0]
+                    }
+                    , {
+                      "name":"Hardened Floating-point Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [0, 0, 0, 2, 0]
+                    }
+                    , {
+                      "name":"Hardened Floating-point Sub"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [0, 0, 0, 3, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:120"
+                  , "type":"resource"
+                  , "data":
+                  [0, 0, 0, 8, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":120
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Floating-Point Dot Product of Size 2"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0, 0, 0, 2, 0]
+                    }
+                    , {
+                      "name":"Hardened Floating-Point Multiply-Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0, 0, 0, 1, 0]
+                    }
+                    , {
+                      "name":"Hardened Floating-point Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [0, 0, 0, 2, 0]
+                    }
+                    , {
+                      "name":"Hardened Floating-point Sub"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [0, 0, 0, 3, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:122"
+                  , "type":"resource"
+                  , "data":
+                  [771, 769, 3, 3.5, 6]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":122
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Floating-point Divide"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [771, 769, 3, 3.5, 6]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:123"
+                  , "type":"resource"
+                  , "data":
+                  [771, 769, 3, 3.5, 6]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":123
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Floating-point Divide"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [771, 769, 3, 3.5, 6]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:125"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":125
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Channel Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:128"
+                  , "type":"resource"
+                  , "data":
+                  [23.5, 0.5, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":128
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [1.5, 0.5, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [22, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:130"
+                  , "type":"resource"
+                  , "data":
+                  [9, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":130
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"33-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [9, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:132"
+                  , "type":"resource"
+                  , "data":
+                  [32, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":132
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:140 > lbm.cl:98"
+                  , "type":"resource"
+                  , "data":
+                  [64, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":140
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":98
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [64, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:144"
+                  , "type":"resource"
+                  , "data":
+                  [5463.5, 6845, 77, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":144
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.5, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [5463, 6845, 77, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced non-aligned cached LSU.  Load with a private 512 kilobit cache. Cache is not shared with any other load. It is flushed on kernel start. Use Dynamic Profiler to verify cache effectiveness. Other kernels should not be updating the data in global memory while this kernel is using it. Cache is created when memory access pattern is data-dependent or appears to be repetitive. Simplify access pattern or mark pointer as 'volatile' to disable generation of this cache."
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced non-aligned cached LSU,\nLoad with a private 512 kilobit cache"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:147"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":147
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Channel Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:160"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":160
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Channel Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:163"
+                  , "type":"resource"
+                  , "data":
+                  [23.5, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":163
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [1.5, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [22, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:167"
+                  , "type":"resource"
+                  , "data":
+                  [84, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":167
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [52, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:178 > lbm.cl:98"
+                  , "type":"resource"
+                  , "data":
+                  [146, 199, 0, 1.5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":178
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":98
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [64, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [82, 199, 0, 1.5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:182"
+                  , "type":"resource"
+                  , "data":
+                  [5463.5, 6845, 77, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":182
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.5, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [5463, 6845, 77, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced non-aligned cached LSU.  Load with a private 512 kilobit cache. Cache is not shared with any other load. It is flushed on kernel start. Use Dynamic Profiler to verify cache effectiveness. Other kernels should not be updating the data in global memory while this kernel is using it. Cache is created when memory access pattern is data-dependent or appears to be repetitive. Simplify access pattern or mark pointer as 'volatile' to disable generation of this cache."
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced non-aligned cached LSU,\nLoad with a private 512 kilobit cache"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:185"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":185
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Channel Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:198"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":198
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Channel Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:201"
+                  , "type":"resource"
+                  , "data":
+                  [2.5, 1.5, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":201
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.5, 0.5, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Xor"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:215"
+                  , "type":"resource"
+                  , "data":
+                  [5463.5, 6845, 77, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":215
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.5, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [5463, 6845, 77, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced non-aligned cached LSU.  Load with a private 512 kilobit cache. Cache is not shared with any other load. It is flushed on kernel start. Use Dynamic Profiler to verify cache effectiveness. Other kernels should not be updating the data in global memory while this kernel is using it. Cache is created when memory access pattern is data-dependent or appears to be repetitive. Simplify access pattern or mark pointer as 'volatile' to disable generation of this cache."
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced non-aligned cached LSU,\nLoad with a private 512 kilobit cache"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:218"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":218
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Channel Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:231"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":231
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Channel Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:234"
+                  , "type":"resource"
+                  , "data":
+                  [2.5, 1.5, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":234
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.5, 0.5, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Xor"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:247"
+                  , "type":"resource"
+                  , "data":
+                  [5463.5, 6845, 77, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":247
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.5, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [5463, 6845, 77, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced non-aligned cached LSU.  Load with a private 512 kilobit cache. Cache is not shared with any other load. It is flushed on kernel start. Use Dynamic Profiler to verify cache effectiveness. Other kernels should not be updating the data in global memory while this kernel is using it. Cache is created when memory access pattern is data-dependent or appears to be repetitive. Simplify access pattern or mark pointer as 'volatile' to disable generation of this cache."
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced non-aligned cached LSU,\nLoad with a private 512 kilobit cache"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:250"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":250
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Channel Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:263"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":263
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Channel Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:266"
+                  , "type":"resource"
+                  , "data":
+                  [2.5, 2.5, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":266
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.5, 0.5, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Xor"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:279"
+                  , "type":"resource"
+                  , "data":
+                  [410.5, 1236.5, 0, 0, 26]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":279
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.5, 0.5, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [410, 1236, 0, 0, 26]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Semi-streaming LSU.  Load with a private 1024 bit cache. Cache is not shared with any other load. It is flushed on kernel start. Use Dynamic Profiler to verify cache effectiveness. Other kernels should not be updating the data in global memory while this kernel is using it. Cache is created when memory access pattern is data-dependent or appears to be repetitive. Simplify access pattern or mark pointer as 'volatile' to disable generation of this cache."
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Semi-streaming LSU,\nLoad with a private 1024 bit cache"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:282"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":282
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Channel Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:295"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":295
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Channel Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:298"
+                  , "type":"resource"
+                  , "data":
+                  [2.5, 2.5, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":298
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.5, 0.5, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Xor"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:311"
+                  , "type":"resource"
+                  , "data":
+                  [5463.5, 6845, 77, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":311
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.5, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [5463, 6845, 77, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced non-aligned cached LSU.  Load with a private 512 kilobit cache. Cache is not shared with any other load. It is flushed on kernel start. Use Dynamic Profiler to verify cache effectiveness. Other kernels should not be updating the data in global memory while this kernel is using it. Cache is created when memory access pattern is data-dependent or appears to be repetitive. Simplify access pattern or mark pointer as 'volatile' to disable generation of this cache."
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced non-aligned cached LSU,\nLoad with a private 512 kilobit cache"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:314"
+                  , "type":"resource"
+                  , "data":
+                  [6, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":314
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Channel Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [5, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:327"
+                  , "type":"resource"
+                  , "data":
+                  [4, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":327
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Channel Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"writeU"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [0.649999, 0.387875, 0.294007, 0, 0.131752]
+      , "total_kernel_resources":
+      [2234, 5024, 0, 1.5, 54]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"text"
+          , "text":"Kernel attribute 'uses_global_work_offset' not specified. Add '__attribute__((uses_global_work_offset(0)))' to reduce area utilization if the kernel will always be enqueued with a 0 or NULL global_work_offset argument in clEnqueueNDRangeKernel. Add '__attribute__((uses_global_work_offset(1)))' to hide this suggestion without affecting kernel functionality."
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit.\nKernel attribute 'uses_global_work_offset' not specified. Add '__attribute__((uses_global_work_offset(0)))' to reduce area utilization if the kernel will always be enqueued with a 0 or NULL global_work_offset argument in clEnqueueNDRangeKernel. Add '__attribute__((uses_global_work_offset(1)))' to hide this suggestion without affecting kernel functionality."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Function overhead"
+          , "type":"resource"
+          , "data":
+          [1338, 2411, 0, 0, 10]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Kernel dispatch logic."
+            }
+            , {
+              "type":"brief"
+              , "text":"Kernel dispatch logic."
+            }
+          ]
+        }
+        , {
+          "name":"writeU.B0"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [34, 132, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [33, 97, 0, 0, 0]
+                }
+                , {
+                  "name":"lbm.cl:378"
+                  , "type":"resource"
+                  , "data":
+                  [1, 35, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":378
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [7, 2, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"lbm.cl:376"
+                  , "type":"resource"
+                  , "data":
+                  [7, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":376
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"lbm.cl:378"
+                  , "type":"resource"
+                  , "data":
+                  [183, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":378
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [70, 2, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [16, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [33, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"writeU.B1"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [101, 220, 0, 0, 8]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [101, 220, 0, 0, 8]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [46, 69, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"lbm.cl:376"
+                  , "type":"resource"
+                  , "data":
+                  [0.5, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":376
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"lbm.cl:378"
+                  , "type":"resource"
+                  , "data":
+                  [45, 69, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":378
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"lbm.cl:381"
+                  , "type":"resource"
+                  , "data":
+                  [0.5, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":381
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [10, 8, 0, 0, 5]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"lbm.cl:376"
+                  , "type":"resource"
+                  , "data":
+                  [13.5, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":376
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"33-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [13.5, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:378"
+                  , "type":"resource"
+                  , "data":
+                  [52, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":378
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [2, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [2, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [33, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [11, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"4-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [4, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:379"
+                  , "type":"resource"
+                  , "data":
+                  [1, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":379
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Channel Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:380"
+                  , "type":"resource"
+                  , "data":
+                  [366, 2172, 0, 0, 31]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":380
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [366, 2172, 0, 0, 31]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:380 > lbm.cl:95"
+                  , "type":"resource"
+                  , "data":
+                  [64, 0, 0, 1.5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":380
+                      }
+                      , {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":95
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 1.5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"lbm.cl:381"
+                  , "type":"resource"
+                  , "data":
+                  [13.5, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":381
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"33-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [13.5, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"writeU.B2"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [5, 8, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"lbm.cl:383"
+                  , "type":"resource"
+                  , "data":
+                  [5, 8, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":383
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

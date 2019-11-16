@@ -1,0 +1,54 @@
+{"rows":[
+{"debug":[[{"filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+,"line":125}]]
+,"details":["/root/yan/lbm/fpga/v11/device/lbm.cl:125: Compiler Warning:     Multiple writes to channel 'CELL_ENTRY_CHANNEL' may lead to bad QoR"]
+,"name":"    Multiple writes to channel 'CELL_ENTRY_CHANNEL' may lead to bad QoR"}
+,{"debug":[[{"filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+,"line":147}]]
+,"details":["/root/yan/lbm/fpga/v11/device/lbm.cl:147: Compiler Warning:     Multiple writes to channel 'CELL_ENTRY_CHANNEL' may lead to bad QoR"]
+,"name":"    Multiple writes to channel 'CELL_ENTRY_CHANNEL' may lead to bad QoR"}
+,{"debug":[[{"filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+,"line":160}]]
+,"details":["/root/yan/lbm/fpga/v11/device/lbm.cl:160: Compiler Warning:     Multiple writes to channel 'CELL_EDGE_ENTRY_CHANNEL' may lead to bad QoR"]
+,"name":"    Multiple writes to channel 'CELL_EDGE_ENTRY_CHANNEL' may lead to bad QoR"}
+,{"debug":[[{"filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+,"line":185}]]
+,"details":["/root/yan/lbm/fpga/v11/device/lbm.cl:185: Compiler Warning:     Multiple writes to channel 'CELL_ENTRY_CHANNEL' may lead to bad QoR"]
+,"name":"    Multiple writes to channel 'CELL_ENTRY_CHANNEL' may lead to bad QoR"}
+,{"debug":[[{"filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+,"line":198}]]
+,"details":["/root/yan/lbm/fpga/v11/device/lbm.cl:198: Compiler Warning:     Multiple writes to channel 'CELL_EDGE_ENTRY_CHANNEL' may lead to bad QoR"]
+,"name":"    Multiple writes to channel 'CELL_EDGE_ENTRY_CHANNEL' may lead to bad QoR"}
+,{"debug":[[{"filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+,"line":218}]]
+,"details":["/root/yan/lbm/fpga/v11/device/lbm.cl:218: Compiler Warning:     Multiple writes to channel 'CELL_ENTRY_CHANNEL' may lead to bad QoR"]
+,"name":"    Multiple writes to channel 'CELL_ENTRY_CHANNEL' may lead to bad QoR"}
+,{"debug":[[{"filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+,"line":231}]]
+,"details":["/root/yan/lbm/fpga/v11/device/lbm.cl:231: Compiler Warning:     Multiple writes to channel 'CELL_EDGE_ENTRY_CHANNEL' may lead to bad QoR"]
+,"name":"    Multiple writes to channel 'CELL_EDGE_ENTRY_CHANNEL' may lead to bad QoR"}
+,{"debug":[[{"filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+,"line":250}]]
+,"details":["/root/yan/lbm/fpga/v11/device/lbm.cl:250: Compiler Warning:     Multiple writes to channel 'CELL_ENTRY_CHANNEL' may lead to bad QoR"]
+,"name":"    Multiple writes to channel 'CELL_ENTRY_CHANNEL' may lead to bad QoR"}
+,{"debug":[[{"filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+,"line":263}]]
+,"details":["/root/yan/lbm/fpga/v11/device/lbm.cl:263: Compiler Warning:     Multiple writes to channel 'CELL_EDGE_ENTRY_CHANNEL' may lead to bad QoR"]
+,"name":"    Multiple writes to channel 'CELL_EDGE_ENTRY_CHANNEL' may lead to bad QoR"}
+,{"debug":[[{"filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+,"line":282}]]
+,"details":["/root/yan/lbm/fpga/v11/device/lbm.cl:282: Compiler Warning:     Multiple writes to channel 'CELL_ENTRY_CHANNEL' may lead to bad QoR"]
+,"name":"    Multiple writes to channel 'CELL_ENTRY_CHANNEL' may lead to bad QoR"}
+,{"debug":[[{"filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+,"line":295}]]
+,"details":["/root/yan/lbm/fpga/v11/device/lbm.cl:295: Compiler Warning:     Multiple writes to channel 'CELL_EDGE_ENTRY_CHANNEL' may lead to bad QoR"]
+,"name":"    Multiple writes to channel 'CELL_EDGE_ENTRY_CHANNEL' may lead to bad QoR"}
+,{"debug":[[{"filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+,"line":314}]]
+,"details":["/root/yan/lbm/fpga/v11/device/lbm.cl:314: Compiler Warning:     Multiple writes to channel 'CELL_ENTRY_CHANNEL' may lead to bad QoR"]
+,"name":"    Multiple writes to channel 'CELL_ENTRY_CHANNEL' may lead to bad QoR"}
+,{"debug":[[{"filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+,"line":327}]]
+,"details":["/root/yan/lbm/fpga/v11/device/lbm.cl:327: Compiler Warning:     Multiple writes to channel 'CELL_EDGE_ENTRY_CHANNEL' may lead to bad QoR"]
+,"name":"    Multiple writes to channel 'CELL_EDGE_ENTRY_CHANNEL' may lead to bad QoR"}
+]}

@@ -1,0 +1,4567 @@
+{
+  "nodes":
+  [
+    {
+      "name":"bu"
+      , "id":3996446440
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"Local Memory"
+          , "id":1
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"cellvector"
+              , "id":2
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                          , "line":"22"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Requested size":"276 bytes"
+                  , "Implemented size":"5632 bytes = 11 replicates x 2<sup>ceil(log2(Requested size))</sup>"
+                  , "Number of banks":"1"
+                  , "Bank width (word size)":"2048 bits"
+                  , "Bank depth":"2 words"
+                  , "Memory layout information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"For each bank, 11 replicates were created  to efficiently support multiple accesses."
+                    }
+                  ]
+                  , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                  , "Additional information":"Running memory at 2x clock to support more concurrent ports"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                    , "line":22
+                  }
+                ]
+              ]
+              , "type":"memsys"
+              , "children":
+              [
+                {
+                  "name":"Bank 0"
+                  , "id":3
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Bank width":"2048 bits"
+                      , "Implemented bank depth":"2 words"
+                      , "Implemented bank size":"5632 bytes = 11 replicates x  bank width x implemented bank depth"
+                      , "Number of active ports":"44"
+                      , "Number of read ports":"22"
+                      , "Number of write ports":"22"
+                      , "Memory layout information":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"For each bank, 11 replicates were created  to efficiently support multiple accesses."
+                        }
+                      ]
+                      , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                        , "line":22
+                      }
+                    ]
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":4
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"512 bytes (2 words deep x 2048 bits wide)"
+                          , "Number of physical ports":"4"
+                          , "Number of read ports":"2"
+                          , "Number of write ports":"2"
+                          , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                            , "line":22
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":5
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"R"
+                          , "id":6
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":7
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":8
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"2048 bits"
+                            , "Depth per copy":"2 words"
+                            , "Number of private copies":"1"
+                            , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                    , {
+                      "name":"Replicate 1"
+                      , "id":9
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"512 bytes (2 words deep x 2048 bits wide)"
+                          , "Number of physical ports":"4"
+                          , "Number of read ports":"2"
+                          , "Number of write ports":"2"
+                          , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                            , "line":22
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":10
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"R"
+                          , "id":12
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":13
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":14
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"2048 bits"
+                            , "Depth per copy":"2 words"
+                            , "Number of private copies":"1"
+                            , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                    , {
+                      "name":"Replicate 2"
+                      , "id":15
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"512 bytes (2 words deep x 2048 bits wide)"
+                          , "Number of physical ports":"4"
+                          , "Number of read ports":"2"
+                          , "Number of write ports":"2"
+                          , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                            , "line":22
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":16
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"R"
+                          , "id":18
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":19
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":20
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"2048 bits"
+                            , "Depth per copy":"2 words"
+                            , "Number of private copies":"1"
+                            , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                    , {
+                      "name":"Replicate 3"
+                      , "id":21
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"512 bytes (2 words deep x 2048 bits wide)"
+                          , "Number of physical ports":"4"
+                          , "Number of read ports":"2"
+                          , "Number of write ports":"2"
+                          , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                            , "line":22
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":22
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"R"
+                          , "id":23
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":24
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":25
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"2048 bits"
+                            , "Depth per copy":"2 words"
+                            , "Number of private copies":"1"
+                            , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                    , {
+                      "name":"Replicate 4"
+                      , "id":26
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"512 bytes (2 words deep x 2048 bits wide)"
+                          , "Number of physical ports":"4"
+                          , "Number of read ports":"2"
+                          , "Number of write ports":"2"
+                          , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                            , "line":22
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":27
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"R"
+                          , "id":28
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":29
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":30
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"2048 bits"
+                            , "Depth per copy":"2 words"
+                            , "Number of private copies":"1"
+                            , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                    , {
+                      "name":"Replicate 5"
+                      , "id":31
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"512 bytes (2 words deep x 2048 bits wide)"
+                          , "Number of physical ports":"4"
+                          , "Number of read ports":"2"
+                          , "Number of write ports":"2"
+                          , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                            , "line":22
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":32
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"R"
+                          , "id":33
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":34
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":35
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"2048 bits"
+                            , "Depth per copy":"2 words"
+                            , "Number of private copies":"1"
+                            , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                    , {
+                      "name":"Replicate 6"
+                      , "id":36
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"512 bytes (2 words deep x 2048 bits wide)"
+                          , "Number of physical ports":"4"
+                          , "Number of read ports":"2"
+                          , "Number of write ports":"2"
+                          , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                            , "line":22
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":37
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"R"
+                          , "id":38
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":39
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":40
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"2048 bits"
+                            , "Depth per copy":"2 words"
+                            , "Number of private copies":"1"
+                            , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                    , {
+                      "name":"Replicate 7"
+                      , "id":41
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"512 bytes (2 words deep x 2048 bits wide)"
+                          , "Number of physical ports":"4"
+                          , "Number of read ports":"2"
+                          , "Number of write ports":"2"
+                          , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                            , "line":22
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":42
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"R"
+                          , "id":43
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":44
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":45
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"2048 bits"
+                            , "Depth per copy":"2 words"
+                            , "Number of private copies":"1"
+                            , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                    , {
+                      "name":"Replicate 8"
+                      , "id":46
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"512 bytes (2 words deep x 2048 bits wide)"
+                          , "Number of physical ports":"4"
+                          , "Number of read ports":"2"
+                          , "Number of write ports":"2"
+                          , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                            , "line":22
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":47
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"R"
+                          , "id":48
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":49
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":50
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"2048 bits"
+                            , "Depth per copy":"2 words"
+                            , "Number of private copies":"1"
+                            , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                    , {
+                      "name":"Replicate 9"
+                      , "id":51
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"512 bytes (2 words deep x 2048 bits wide)"
+                          , "Number of physical ports":"4"
+                          , "Number of read ports":"2"
+                          , "Number of write ports":"2"
+                          , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                            , "line":22
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":52
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"R"
+                          , "id":53
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":54
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":55
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"2048 bits"
+                            , "Depth per copy":"2 words"
+                            , "Number of private copies":"1"
+                            , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                    , {
+                      "name":"Replicate 10"
+                      , "id":56
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"512 bytes (2 words deep x 2048 bits wide)"
+                          , "Number of physical ports":"4"
+                          , "Number of read ports":"2"
+                          , "Number of write ports":"2"
+                          , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                            , "line":22
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":57
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"R"
+                          , "id":58
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":59
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":60
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"2048 bits"
+                            , "Depth per copy":"2 words"
+                            , "Number of private copies":"1"
+                            , "Memory layout information":"In each private copy:\n  Variable 'cellvector' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>8</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"cell_interior"
+              , "id":61
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                          , "line":"38"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Requested size":"68 bytes"
+                  , "Implemented size":"128 bytes = 2<sup>ceil(log2(Requested size))</sup>"
+                  , "Number of banks":"2"
+                  , "Bank width (word size)":"512 bits"
+                  , "Bank depth":"1 word"
+                  , "Memory layout information":"In each private copy:\n  Variable 'cell_interior' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                  , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td>b<sub>6</sub></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Bank bit</td><td>b<sub>6</sub></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                    , "line":38
+                  }
+                ]
+              ]
+              , "type":"memsys"
+              , "children":
+              [
+                {
+                  "name":"Bank 0"
+                  , "id":62
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Bank width":"512 bits"
+                      , "Implemented bank depth":"1 word"
+                      , "Implemented bank size":"64 bytes =  bank width x implemented bank depth"
+                      , "Number of active ports":"2"
+                      , "Number of read ports":"1"
+                      , "Number of write ports":"1"
+                      , "Memory layout information":"In each private copy:\n  Variable 'cell_interior' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                      , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td><b>0</b></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Bank bit</td><td><b>0</b></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                        , "line":38
+                      }
+                    ]
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":63
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"64 bytes (1 word deep x 512 bits wide)"
+                          , "Number of physical ports":"2"
+                          , "Number of read ports":"1"
+                          , "Number of write ports":"1"
+                          , "Memory layout information":"In each private copy:\n  Variable 'cell_interior' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td><b>0</b></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Bank bit</td><td><b>0</b></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                            , "line":38
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":64
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":65
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"512 bits"
+                            , "Depth per copy":"1 word"
+                            , "Number of private copies":"1"
+                            , "Memory layout information":"In each private copy:\n  Variable 'cell_interior' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td><b>0</b></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Bank bit</td><td><b>0</b></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+                , {
+                  "name":"Bank 1"
+                  , "id":66
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Bank width":"512 bits"
+                      , "Implemented bank depth":"1 word"
+                      , "Implemented bank size":"64 bytes =  bank width x implemented bank depth"
+                      , "Number of active ports":"1"
+                      , "Number of write ports":"1"
+                      , "Number of un-used ports":"1"
+                      , "Memory layout information":"In each private copy:\n  Variable 'cell_interior' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                      , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td><b>1</b></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Bank bit</td><td><b>1</b></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                        , "line":38
+                      }
+                    ]
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":67
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"64 bytes (1 word deep x 512 bits wide)"
+                          , "Number of physical ports":"2"
+                          , "Number of read ports":"0"
+                          , "Number of write ports":"1"
+                          , "Number of un-used ports":"1"
+                          , "Memory layout information":"In each private copy:\n  Variable 'cell_interior' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td><b>1</b></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Bank bit</td><td><b>1</b></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                            , "line":38
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"W"
+                          , "id":68
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"512 bits"
+                            , "Depth per copy":"1 word"
+                            , "Number of private copies":"1"
+                            , "Memory layout information":"In each private copy:\n  Variable 'cell_interior' occupies memory words [0-1] and has 1 array element split across 1 memory words."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bit</td><td><b>1</b></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Bank bit</td><td><b>1</b></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"w"
+              , "id":69
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/root/yan/lbm/fpga/lbm/device/../host/inc/defines.h"
+                          , "line":"71"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Requested size":"36 bytes"
+                  , "Implemented size":"36 bytes"
+                  , "Number of banks":"1"
+                  , "Number of replicates":"1"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/root/yan/lbm/fpga/lbm/device/../host/inc/defines.h"
+                    , "line":71
+                  }
+                ]
+              ]
+              , "type":"romsys"
+              , "children":
+              [
+                {
+                  "name":"Bank 0"
+                  , "id":70
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Bank width":"32 bits"
+                      , "Implemented size":"36 bytes"
+                      , "Number of replicates":"1"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/lbm/device/../host/inc/defines.h"
+                        , "line":71
+                      }
+                    ]
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":71
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Width":"32 bits"
+                          , "Depth":"9 words"
+                          , "Size":"36 bytes"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/root/yan/lbm/fpga/lbm/device/../host/inc/defines.h"
+                            , "line":71
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":72
+                          , "type":"port"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"e"
+              , "id":73
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/root/yan/lbm/fpga/lbm/device/../host/inc/defines.h"
+                          , "line":"74"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Requested size":"72 bytes"
+                  , "Implemented size":"144 bytes"
+                  , "Number of banks":"1"
+                  , "Number of replicates":"2"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/root/yan/lbm/fpga/lbm/device/../host/inc/defines.h"
+                    , "line":74
+                  }
+                ]
+              ]
+              , "type":"romsys"
+              , "children":
+              [
+                {
+                  "name":"Bank 0"
+                  , "id":74
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Bank width":"32 bits"
+                      , "Implemented size":"144 bytes"
+                      , "Number of replicates":"2"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/lbm/device/../host/inc/defines.h"
+                        , "line":74
+                      }
+                    ]
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":75
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Width":"32 bits"
+                          , "Depth":"18 words"
+                          , "Size":"72 bytes"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/root/yan/lbm/fpga/lbm/device/../host/inc/defines.h"
+                            , "line":74
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":76
+                          , "type":"port"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Replicate 1"
+                      , "id":77
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Width":"32 bits"
+                          , "Depth":"18 words"
+                          , "Size":"72 bytes"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/root/yan/lbm/fpga/lbm/device/../host/inc/defines.h"
+                            , "line":74
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":78
+                          , "type":"port"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"cell"
+              , "id":79
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                          , "line":"33"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                    , "line":33
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"smallcell"
+              , "id":80
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                          , "line":"40"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                    , "line":40
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+        , {
+          "name":"Load"
+          , "id":3996739664
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"4"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":33
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996740512
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"4"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":33
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996741360
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"4"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":33
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996742208
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"4"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":33
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996743024
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"8 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"4"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":33
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996744416
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"10"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":33
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996745072
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"10"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":33
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996746208
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996747024
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996747920
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996748848
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996749744
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996750640
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996751568
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996752496
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996724160
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996725088
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996757472
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996758288
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996759216
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996760144
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996760960
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996761776
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996763056
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector"
+              , "Start cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3996730304
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"2048 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Stores to":"cellvector"
+              , "Start cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":22
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3996732592
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"256 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Stores to":"cellvector"
+              , "Start cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":22
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"SHARE"
+          , "id":11
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"SHARE"
+          , "id":17
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"Load"
+          , "id":3996841296
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cell_interior"
+              , "Start cycle":"72"
+              , "Latency":"3"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":46
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3996762320
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"512 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Stores to":"cell_interior"
+              , "Start cycle":"22"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3996763440
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Stores to":"cell_interior"
+              , "Start cycle":"22"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996802936
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data width":"32 bits"
+              , "Type":"ROM lookup"
+              , "Loads from":"w"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/root/yan/lbm/fpga/lbm/device/../host/inc/defines.h"
+                      , "line":"155"
+                    }
+                    , {
+                      "filename":"/root/yan/lbm/fpga/lbm/device/../host/inc/defines.h"
+                      , "line":"169"
+                    }
+                    , {
+                      "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                      , "line":"46"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/../host/inc/defines.h"
+                , "line":155
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996804216
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data width":"32 bits"
+              , "Type":"ROM lookup"
+              , "Loads from":"e"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/root/yan/lbm/fpga/lbm/device/../host/inc/defines.h"
+                      , "line":"155"
+                    }
+                    , {
+                      "filename":"/root/yan/lbm/fpga/lbm/device/../host/inc/defines.h"
+                      , "line":"169"
+                    }
+                    , {
+                      "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                      , "line":"46"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/../host/inc/defines.h"
+                , "line":155
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3996804920
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data width":"32 bits"
+              , "Type":"ROM lookup"
+              , "Loads from":"e"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/root/yan/lbm/fpga/lbm/device/../host/inc/defines.h"
+                      , "line":"155"
+                    }
+                    , {
+                      "filename":"/root/yan/lbm/fpga/lbm/device/../host/inc/defines.h"
+                      , "line":"169"
+                    }
+                    , {
+                      "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                      , "line":"46"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/../host/inc/defines.h"
+                , "line":155
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"cu"
+      , "id":3996489496
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"Local Memory"
+          , "id":81
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"cellvector.cells"
+              , "id":82
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/root/yan/lbm/fpga/lbm/device/cu.cl"
+                          , "line":"14"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Requested size":"512 bytes"
+                  , "Implemented size":"1024 bytes = 2 private copies x  requested size"
+                  , "Number of banks":"1"
+                  , "Bank width (word size)":"4096 bits"
+                  , "Bank depth":"1 word"
+                  , "Implemented bank depth":"2 words = 2 private copies x bank depth"
+                  , "Memory layout information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"In each private copy:\n  Variable 'cellvector.cells' occupies memory words [0-0] and has 4 array elements per memory word."
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"For each replicate, 2 private copies were created to enable simultaneous execution of 2 loop iterations defined at  (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"/root/yan/lbm/fpga/lbm/device/cu.cl"
+                          , "line":"12"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Private-copy bit</td><td>b<sub>9</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                  , "Additional information":"You can reduce the number of copies of this memory by limiting the concurrency of its loop; see the OpenCL Programming Guide for details."
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/root/yan/lbm/fpga/lbm/device/cu.cl"
+                    , "line":14
+                  }
+                ]
+              ]
+              , "type":"memsys"
+              , "children":
+              [
+                {
+                  "name":"Bank 0"
+                  , "id":83
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Bank width":"4096 bits"
+                      , "Implemented bank depth":"2 words"
+                      , "Implemented bank size":"1024 bytes =  bank width x implemented bank depth"
+                      , "Number of active ports":"2"
+                      , "Number of read ports":"1"
+                      , "Number of write ports":"1"
+                      , "Memory layout information":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"In each private copy:\n  Variable 'cellvector.cells' occupies memory words [0-0] and has 4 array elements per memory word."
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"For each replicate, 2 private copies were created to enable simultaneous execution of 2 loop iterations defined at  (%L)"
+                          , "links":
+                          [
+                            {
+                              "filename":"/root/yan/lbm/fpga/lbm/device/cu.cl"
+                              , "line":"12"
+                            }
+                          ]
+                        }
+                      ]
+                      , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Private-copy bit</td><td>b<sub>9</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/lbm/device/cu.cl"
+                        , "line":14
+                      }
+                    ]
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":84
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"1024 bytes (2 words deep x 4096 bits wide)"
+                          , "Number of physical ports":"2"
+                          , "Number of read ports":"1"
+                          , "Number of write ports":"1"
+                          , "Memory layout information":
+                          [
+                            {
+                              "type":"text"
+                              , "text":"In each private copy:\n  Variable 'cellvector.cells' occupies memory words [0-0] and has 4 array elements per memory word."
+                            }
+                            , {
+                              "type":"text"
+                              , "text":"For each replicate, 2 private copies were created to enable simultaneous execution of 2 loop iterations defined at  (%L)"
+                              , "links":
+                              [
+                                {
+                                  "filename":"/root/yan/lbm/fpga/lbm/device/cu.cl"
+                                  , "line":"12"
+                                }
+                              ]
+                            }
+                          ]
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Private-copy bit</td><td>b<sub>9</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/root/yan/lbm/fpga/lbm/device/cu.cl"
+                            , "line":14
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":85
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":86
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":2
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"4096 bits"
+                            , "Depth per copy":"1 word"
+                            , "Number of private copies":"2"
+                            , "Memory layout information":
+                            [
+                              {
+                                "type":"text"
+                                , "text":"In each private copy:\n  Variable 'cellvector.cells' occupies memory words [0-0] and has 4 array elements per memory word."
+                              }
+                              , {
+                                "type":"text"
+                                , "text":"For each replicate, 2 private copies were created to enable simultaneous execution of 2 loop iterations defined at  (%L)"
+                                , "links":
+                                [
+                                  {
+                                    "filename":"/root/yan/lbm/fpga/lbm/device/cu.cl"
+                                    , "line":"12"
+                                  }
+                                ]
+                              }
+                            ]
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Private-copy bit</td><td>b<sub>9</sub></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+                            , "Memory word address pattern":"<table><tr><td>Private copy 0: </td><td>0</td></tr><tr><td>Private copy 1: </td><td>1</td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"cellvector.isboundary"
+              , "id":87
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/root/yan/lbm/fpga/lbm/device/cu.cl"
+                          , "line":"14"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/root/yan/lbm/fpga/lbm/device/cu.cl"
+                    , "line":14
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"cell"
+              , "id":88
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/root/yan/lbm/fpga/lbm/device/cu.cl"
+                          , "line":"22"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/root/yan/lbm/fpga/lbm/device/cu.cl"
+                    , "line":22
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+        , {
+          "name":"Load"
+          , "id":3997011328
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"512 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Loads from":"cellvector.cells"
+              , "Start cycle":"2"
+              , "Latency":"3"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/cu.cl"
+                , "line":22
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3997000352
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"4096 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Local-pipelined never-stall"
+              , "Stores to":"cellvector.cells"
+              , "Start cycle":"3"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/cu.cl"
+                , "line":14
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"data_reader"
+      , "id":3996495736
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"Local Memory"
+          , "id":89
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"cellvector.cells"
+              , "id":90
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                          , "line":"25"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Requested size":"272 bytes"
+                  , "Implemented size":"512 bytes = 2<sup>ceil(log2(Requested size))</sup>"
+                  , "Number of banks":"1"
+                  , "Bank width (word size)":"4096 bits"
+                  , "Bank depth":"1 word"
+                  , "Memory layout information":"In each private copy:\n  Variable 'cellvector.cells' occupies memory words [0-0] and has 7 array elements per memory word."
+                  , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></table>"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                    , "line":25
+                  }
+                ]
+              ]
+              , "type":"memsys"
+              , "children":
+              [
+                {
+                  "name":"Bank 0"
+                  , "id":91
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Bank width":"4096 bits"
+                      , "Implemented bank depth":"1 word"
+                      , "Implemented bank size":"512 bytes =  bank width x implemented bank depth"
+                      , "Number of active ports":"2"
+                      , "Number of shared (RW) ports":"2"
+                      , "Memory layout information":"In each private copy:\n  Variable 'cellvector.cells' occupies memory words [0-0] and has 7 array elements per memory word."
+                      , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></table>"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                        , "line":25
+                      }
+                    ]
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":92
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"512 bytes (1 word deep x 4096 bits wide)"
+                          , "Number of physical ports":"2"
+                          , "Number of read ports":"0"
+                          , "Number of shared (RW) ports":"2"
+                          , "Memory layout information":"In each private copy:\n  Variable 'cellvector.cells' occupies memory words [0-0] and has 7 array elements per memory word."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                            , "line":25
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"RW"
+                          , "id":93
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"RW"
+                          , "id":95
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"4096 bits"
+                            , "Depth per copy":"1 word"
+                            , "Number of private copies":"1"
+                            , "Memory layout information":"In each private copy:\n  Variable 'cellvector.cells' occupies memory words [0-0] and has 7 array elements per memory word."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"cellvector.isboundary"
+              , "id":97
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                          , "line":"25"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                    , "line":25
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"smallcell,smallcell,smallcell,smallcell"
+              , "id":98
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                          , "line":"34"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                    , "line":34
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+        , {
+          "name":"Load"
+          , "id":3997322544
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Loads from":"cellvector.cells"
+              , "Start cycle":"312"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":97
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3997323264
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Loads from":"cellvector.cells"
+              , "Start cycle":"375"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":97
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3997323984
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Loads from":"cellvector.cells"
+              , "Start cycle":"438"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":97
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3997324704
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Loads from":"cellvector.cells"
+              , "Start cycle":"501"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":97
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3997325424
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"4096 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Loads from":"cellvector.cells"
+              , "Start cycle":"564"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":110
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3997308176
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"256 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Stores to":"cellvector.cells"
+              , "Start cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":48
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3997308560
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"128 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Stores to":"cellvector.cells"
+              , "Start cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":48
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3997308944
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Stores to":"cellvector.cells"
+              , "Start cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":63
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3997309328
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"256 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Stores to":"cellvector.cells"
+              , "Start cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":48
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3997309712
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Stores to":"cellvector.cells"
+              , "Start cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":63
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3997310096
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"128 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Stores to":"cellvector.cells"
+              , "Start cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":48
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3997310480
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"256 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Stores to":"cellvector.cells"
+              , "Start cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":48
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3997310864
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"128 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Stores to":"cellvector.cells"
+              , "Start cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":48
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3997311248
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"256 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Stores to":"cellvector.cells"
+              , "Start cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":48
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3997311632
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Stores to":"cellvector.cells"
+              , "Start cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":48
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3997312016
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Stores to":"cellvector.cells"
+              , "Start cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":63
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3997312400
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Stores to":"cellvector.cells"
+              , "Start cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":55
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3997322208
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"4096 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Stores to":"cellvector.cells"
+              , "Start cycle":"281"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":75
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3997322928
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Stores to":"cellvector.cells"
+              , "Start cycle":"344"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":97
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3997323648
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Stores to":"cellvector.cells"
+              , "Start cycle":"407"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":97
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3997324368
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Stores to":"cellvector.cells"
+              , "Start cycle":"470"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":97
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":3997325088
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"No"
+              , "Type":"Local-pipelined"
+              , "Stores to":"cellvector.cells"
+              , "Start cycle":"533"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":97
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ARB"
+          , "id":94
+          , "details":
+          [
+            {
+              "type":"table"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"ARB"
+          , "id":96
+          , "details":
+          [
+            {
+              "type":"table"
+            }
+          ]
+          , "type":"arb"
+        }
+      ]
+    }
+    , {
+      "name":"velocity_writer"
+      , "id":3996502408
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"Local Memory"
+          , "id":99
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"cell_vector"
+              , "id":100
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/root/yan/lbm/fpga/lbm/device/velocity_writer.cl"
+                          , "line":"9"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/root/yan/lbm/fpga/lbm/device/velocity_writer.cl"
+                    , "line":9
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":5
+      , "to":3996741360
+    }
+    , {
+      "from":6
+      , "to":3996742208
+    }
+    , {
+      "from":3996730304
+      , "to":7
+    }
+    , {
+      "from":3996732592
+      , "to":8
+    }
+    , {
+      "from":10
+      , "to":11
+    }
+    , {
+      "from":11
+      , "to":3996745072
+    }
+    , {
+      "from":11
+      , "to":3996748848
+    }
+    , {
+      "from":12
+      , "to":3996747920
+    }
+    , {
+      "from":3996730304
+      , "to":13
+    }
+    , {
+      "from":3996732592
+      , "to":14
+    }
+    , {
+      "from":16
+      , "to":17
+    }
+    , {
+      "from":17
+      , "to":3996743024
+    }
+    , {
+      "from":17
+      , "to":3996751568
+    }
+    , {
+      "from":18
+      , "to":3996752496
+    }
+    , {
+      "from":3996730304
+      , "to":19
+    }
+    , {
+      "from":3996732592
+      , "to":20
+    }
+    , {
+      "from":22
+      , "to":3996757472
+    }
+    , {
+      "from":23
+      , "to":3996758288
+    }
+    , {
+      "from":3996730304
+      , "to":24
+    }
+    , {
+      "from":3996732592
+      , "to":25
+    }
+    , {
+      "from":27
+      , "to":3996760960
+    }
+    , {
+      "from":28
+      , "to":3996761776
+    }
+    , {
+      "from":3996730304
+      , "to":29
+    }
+    , {
+      "from":3996732592
+      , "to":30
+    }
+    , {
+      "from":32
+      , "to":3996739664
+    }
+    , {
+      "from":33
+      , "to":3996740512
+    }
+    , {
+      "from":3996730304
+      , "to":34
+    }
+    , {
+      "from":3996732592
+      , "to":35
+    }
+    , {
+      "from":37
+      , "to":3996746208
+    }
+    , {
+      "from":38
+      , "to":3996747024
+    }
+    , {
+      "from":3996730304
+      , "to":39
+    }
+    , {
+      "from":3996732592
+      , "to":40
+    }
+    , {
+      "from":42
+      , "to":3996749744
+    }
+    , {
+      "from":43
+      , "to":3996750640
+    }
+    , {
+      "from":3996730304
+      , "to":44
+    }
+    , {
+      "from":3996732592
+      , "to":45
+    }
+    , {
+      "from":47
+      , "to":3996724160
+    }
+    , {
+      "from":48
+      , "to":3996725088
+    }
+    , {
+      "from":3996730304
+      , "to":49
+    }
+    , {
+      "from":3996732592
+      , "to":50
+    }
+    , {
+      "from":52
+      , "to":3996759216
+    }
+    , {
+      "from":53
+      , "to":3996760144
+    }
+    , {
+      "from":3996730304
+      , "to":54
+    }
+    , {
+      "from":3996732592
+      , "to":55
+    }
+    , {
+      "from":57
+      , "to":3996744416
+    }
+    , {
+      "from":58
+      , "to":3996763056
+    }
+    , {
+      "from":3996730304
+      , "to":59
+    }
+    , {
+      "from":3996732592
+      , "to":60
+    }
+    , {
+      "from":64
+      , "to":3996841296
+    }
+    , {
+      "from":3996762320
+      , "to":65
+    }
+    , {
+      "from":3996763440
+      , "to":68
+    }
+    , {
+      "from":3996802936
+      , "to":72
+    }
+    , {
+      "from":3996804216
+      , "to":76
+    }
+    , {
+      "from":3996804920
+      , "to":78
+    }
+    , {
+      "from":85
+      , "to":3997011328
+    }
+    , {
+      "from":3997000352
+      , "to":86
+    }
+    , {
+      "from":93
+      , "to":94
+    }
+    , {
+      "from":94
+      , "to":93
+    }
+    , {
+      "from":94
+      , "to":3997323984
+    }
+    , {
+      "from":94
+      , "to":3997325424
+    }
+    , {
+      "from":3997311632
+      , "to":94
+    }
+    , {
+      "from":3997308560
+      , "to":94
+    }
+    , {
+      "from":3997312400
+      , "to":94
+    }
+    , {
+      "from":3997309328
+      , "to":94
+    }
+    , {
+      "from":3997322928
+      , "to":94
+    }
+    , {
+      "from":3997324368
+      , "to":94
+    }
+    , {
+      "from":3997310096
+      , "to":94
+    }
+    , {
+      "from":94
+      , "to":3997322544
+    }
+    , {
+      "from":3997310864
+      , "to":94
+    }
+    , {
+      "from":95
+      , "to":96
+    }
+    , {
+      "from":96
+      , "to":95
+    }
+    , {
+      "from":96
+      , "to":3997323264
+    }
+    , {
+      "from":3997311248
+      , "to":96
+    }
+    , {
+      "from":3997309712
+      , "to":96
+    }
+    , {
+      "from":3997308176
+      , "to":96
+    }
+    , {
+      "from":96
+      , "to":3997324704
+    }
+    , {
+      "from":3997312016
+      , "to":96
+    }
+    , {
+      "from":3997323648
+      , "to":96
+    }
+    , {
+      "from":3997308944
+      , "to":96
+    }
+    , {
+      "from":3997322208
+      , "to":96
+    }
+    , {
+      "from":3997325088
+      , "to":96
+    }
+    , {
+      "from":3997310480
+      , "to":96
+    }
+  ]
+}

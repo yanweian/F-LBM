@@ -1,0 +1,3015 @@
+{
+  "nodes":
+  [
+    {
+      "type":"kernel"
+      , "id":2
+      , "name":"bu"
+      , "children":
+      [
+        {
+          "type":"inst"
+          , "id":11
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":22
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"2048 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"cellvector"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":12
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":22
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"256 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"cellvector"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":15
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":33
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"4"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":16
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":33
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"4"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":17
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":33
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"4"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":18
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":33
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"4"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":19
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":33
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"8 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"4"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":20
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":33
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"10"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":21
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":33
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"10"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":22
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":23
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":24
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":25
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":26
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":27
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":28
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":29
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":30
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":31
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":32
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":33
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":34
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":35
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":36
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":37
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":38
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"512 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"cell_interior"
+              , "Start Cycle":"22"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":39
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector"
+              , "Start Cycle":"17"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":40
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"cell_interior"
+              , "Start Cycle":"22"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":42
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                , "line":46
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cell_interior"
+              , "Start Cycle":"72"
+              , "Latency":"3"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":55
+          , "name":"Local Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":56
+              , "name":"cellvector"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                    , "line":22
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":57
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                        , "line":22
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":58
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":59
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":60
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":61
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":62
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":64
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":65
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":67
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":68
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":69
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":70
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":71
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":72
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":73
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":74
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":75
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":76
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":77
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":78
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":79
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":80
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":81
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":82
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":83
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"24 total ports/bank\n22 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"24"
+                      , "Number of read ports per bank":"22"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"11"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "details":
+                  [
+                    {
+                      "type":"brief"
+                      , "text":"276B requested\n5632B implemented"
+                    }
+                  ]
+                  , "Requested size":"276 bytes"
+                  , "Implemented size":"5632 bytes"
+                  , "Number of banks":"1"
+                  , "Bank width":"2048 bits"
+                  , "Bank depth":"2 words"
+                  , "Total replication":"11"
+                  , "Additional Information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Replicated 11 times to efficiently support multiple accesses"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Running memory at 2x clock to support more concurrent ports"
+                    }
+                  ]
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"memsys"
+              , "id":84
+              , "name":"cell_interior"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                    , "line":38
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":85
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                        , "line":38
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":87
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":88
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":86
+                  , "name":"Bank 1"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/lbm/device/bu.cl"
+                        , "line":38
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":89
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"1 total ports/bank\n0 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"1"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "details":
+                  [
+                    {
+                      "type":"brief"
+                      , "text":"68B requested\n128B implemented"
+                    }
+                  ]
+                  , "Requested size":"68 bytes"
+                  , "Implemented size":"128 bytes"
+                  , "Number of banks":"2"
+                  , "Bank width":"512 bits"
+                  , "Bank depth":"1 word"
+                  , "Total replication":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":63
+          , "name":"SHARE"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":66
+          , "name":"SHARE"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":91
+      , "name":"cu"
+      , "children":
+      [
+        {
+          "type":"inst"
+          , "id":97
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/cu.cl"
+                , "line":14
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"4096 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"cellvector.cells"
+              , "Start Cycle":"3"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":102
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/cu.cl"
+                , "line":22
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"512 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"cellvector.cells"
+              , "Start Cycle":"2"
+              , "Latency":"3"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":118
+          , "name":"Local Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":119
+              , "name":"cellvector.cells"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/root/yan/lbm/fpga/lbm/device/cu.cl"
+                    , "line":14
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":120
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/lbm/device/cu.cl"
+                        , "line":14
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":121
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":122
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "details":
+                  [
+                    {
+                      "type":"brief"
+                      , "text":"512B requested\n1024B implemented"
+                    }
+                  ]
+                  , "Requested size":"512 bytes"
+                  , "Implemented size":"1024 bytes"
+                  , "Number of banks":"1"
+                  , "Bank width":"4096 bits"
+                  , "Bank depth":"1 word"
+                  , "Total replication":"2"
+                  , "Additional Information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"2 independent copies of this memory were created to enable simultaneous execution of 2 loop iterations defined at  (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"/root/yan/lbm/fpga/lbm/device/cu.cl"
+                          , "line":"12"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"You can reduce the number of copies of this memory by limiting the concurrency of its loop; see the OpenCL Programming Guide for details."
+                    }
+                  ]
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":123
+      , "name":"data_reader"
+      , "children":
+      [
+        {
+          "type":"inst"
+          , "id":132
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":48
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"256 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"cellvector.cells"
+              , "Start Cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":133
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":48
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"128 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"cellvector.cells"
+              , "Start Cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":134
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":63
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"cellvector.cells"
+              , "Start Cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":135
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":48
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"256 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"cellvector.cells"
+              , "Start Cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":136
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":63
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"cellvector.cells"
+              , "Start Cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":137
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":48
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"128 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"cellvector.cells"
+              , "Start Cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":138
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":48
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"256 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"cellvector.cells"
+              , "Start Cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":139
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":48
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"128 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"cellvector.cells"
+              , "Start Cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":140
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":48
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"256 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"cellvector.cells"
+              , "Start Cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":141
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":48
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"cellvector.cells"
+              , "Start Cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":142
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":63
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"cellvector.cells"
+              , "Start Cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":143
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":55
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"64 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"cellvector.cells"
+              , "Start Cycle":"250"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":144
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":75
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"4096 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"cellvector.cells"
+              , "Start Cycle":"281"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":145
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":97
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"cellvector.cells"
+              , "Start Cycle":"312"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":146
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":97
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"cellvector.cells"
+              , "Start Cycle":"344"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":147
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":97
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"cellvector.cells"
+              , "Start Cycle":"375"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":148
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":97
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"cellvector.cells"
+              , "Start Cycle":"407"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":149
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":97
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"cellvector.cells"
+              , "Start Cycle":"438"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":150
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":97
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"cellvector.cells"
+              , "Start Cycle":"470"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":151
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":97
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"cellvector.cells"
+              , "Start Cycle":"501"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":152
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":97
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"cellvector.cells"
+              , "Start Cycle":"533"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":153
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                , "line":110
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"4096 bits"
+              , "Type":"Local-pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"cellvector.cells"
+              , "Start Cycle":"564"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":157
+          , "name":"Local Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":158
+              , "name":"cellvector.cells"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                    , "line":25
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":159
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/lbm/device/data_reader.cl"
+                        , "line":25
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":160
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":162
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "details":
+                  [
+                    {
+                      "type":"brief"
+                      , "text":"272B requested\n512B implemented"
+                    }
+                  ]
+                  , "Requested size":"272 bytes"
+                  , "Implemented size":"512 bytes"
+                  , "Number of banks":"1"
+                  , "Bank width":"4096 bits"
+                  , "Bank depth":"1 word"
+                  , "Total replication":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":161
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":163
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":58
+      , "to":15
+    }
+    , {
+      "from":59
+      , "to":16
+    }
+    , {
+      "from":60
+      , "to":17
+    }
+    , {
+      "from":61
+      , "to":18
+    }
+    , {
+      "from":63
+      , "to":19
+    }
+    , {
+      "from":63
+      , "to":28
+    }
+    , {
+      "from":62
+      , "to":63
+    }
+    , {
+      "from":64
+      , "to":20
+    }
+    , {
+      "from":66
+      , "to":21
+    }
+    , {
+      "from":66
+      , "to":25
+    }
+    , {
+      "from":65
+      , "to":66
+    }
+    , {
+      "from":67
+      , "to":22
+    }
+    , {
+      "from":68
+      , "to":23
+    }
+    , {
+      "from":69
+      , "to":24
+    }
+    , {
+      "from":70
+      , "to":26
+    }
+    , {
+      "from":71
+      , "to":27
+    }
+    , {
+      "from":72
+      , "to":29
+    }
+    , {
+      "from":73
+      , "to":30
+    }
+    , {
+      "from":74
+      , "to":31
+    }
+    , {
+      "from":75
+      , "to":32
+    }
+    , {
+      "from":76
+      , "to":33
+    }
+    , {
+      "from":77
+      , "to":34
+    }
+    , {
+      "from":78
+      , "to":35
+    }
+    , {
+      "from":79
+      , "to":36
+    }
+    , {
+      "from":80
+      , "to":37
+    }
+    , {
+      "from":81
+      , "to":39
+    }
+    , {
+      "from":11
+      , "to":82
+    }
+    , {
+      "from":12
+      , "to":83
+    }
+    , {
+      "from":87
+      , "to":42
+    }
+    , {
+      "from":38
+      , "to":88
+    }
+    , {
+      "from":40
+      , "to":89
+    }
+    , {
+      "from":121
+      , "to":102
+    }
+    , {
+      "from":97
+      , "to":122
+    }
+    , {
+      "from":133
+      , "to":161
+    }
+    , {
+      "from":135
+      , "to":161
+    }
+    , {
+      "from":137
+      , "to":161
+    }
+    , {
+      "from":139
+      , "to":161
+    }
+    , {
+      "from":141
+      , "to":161
+    }
+    , {
+      "from":143
+      , "to":161
+    }
+    , {
+      "from":161
+      , "to":145
+    }
+    , {
+      "from":146
+      , "to":161
+    }
+    , {
+      "from":161
+      , "to":149
+    }
+    , {
+      "from":150
+      , "to":161
+    }
+    , {
+      "from":161
+      , "to":153
+    }
+    , {
+      "from":161
+      , "to":160
+    }
+    , {
+      "from":160
+      , "to":161
+    }
+    , {
+      "from":132
+      , "to":163
+    }
+    , {
+      "from":134
+      , "to":163
+    }
+    , {
+      "from":136
+      , "to":163
+    }
+    , {
+      "from":138
+      , "to":163
+    }
+    , {
+      "from":140
+      , "to":163
+    }
+    , {
+      "from":142
+      , "to":163
+    }
+    , {
+      "from":144
+      , "to":163
+    }
+    , {
+      "from":163
+      , "to":147
+    }
+    , {
+      "from":148
+      , "to":163
+    }
+    , {
+      "from":163
+      , "to":151
+    }
+    , {
+      "from":152
+      , "to":163
+    }
+    , {
+      "from":163
+      , "to":162
+    }
+    , {
+      "from":162
+      , "to":163
+    }
+  ]
+}

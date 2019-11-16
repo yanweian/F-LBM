@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "pac": "javascript",
+        "istream": "cpp",
+        "memory": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "xlocmon": "cpp",
+        "xlocnum": "cpp",
+        "xloctime": "cpp",
+        "iosfwd": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp",
+        "xlocale": "cpp",
+        "complex": "cpp",
+        "xiosbase": "cpp",
+        "ios": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp"
+    }
+}

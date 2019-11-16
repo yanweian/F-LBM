@@ -1,0 +1,34 @@
+{"rows":[
+{"details":["Compiler Warning: Functions  boundary_detector
+, boundary_streamer
+, bu
+, cu
+, data_reader
+, interior_streamer
+, signal_generator and velocity_writer may form a cycle due to connectivity of channels BD2BU_CWBV_CHANNEL
+, BD2CU_CELLVECTOR_CHANNEL
+, BSTREAMER2DATAR_CHAR_CHANNEL
+, BU2BSTREAMER_CELL_CHANNEL
+, CU2ISTREAMER_FWP_CHANNEL
+, CU2VW_CELLVECTOR_CHANNEL
+, DATAR2BD_CELLVECTOR_CHANNEL
+, DR2CU_REAL_CHANNEL
+, ISTREAMER2DATAR_CHAR_CHANNEL
+, SINGALG2DATAR_CHAR_CHANNEL and VW2SINGALG_CHAR_CHANNEL. Use mem_fence if you require source code-based ordering of channel operations. Channel depths cannot be optimized."]
+,"name":"Functions  boundary_detector
+, boundary_streamer
+, bu
+, cu
+, data_reader
+, interior_streamer
+, signal_generator and velocity_writer may form a cycle due to connectivity of channels BD2BU_CWBV_CHANNEL
+, BD2CU_CELLVECTOR_CHANNEL
+, BSTREAMER2DATAR_CHAR_CHANNEL
+, BU2BSTREAMER_CELL_CHANNEL
+, CU2ISTREAMER_FWP_CHANNEL
+, CU2VW_CELLVECTOR_CHANNEL
+, DATAR2BD_CELLVECTOR_CHANNEL
+, DR2CU_REAL_CHANNEL
+, ISTREAMER2DATAR_CHAR_CHANNEL
+, SINGALG2DATAR_CHAR_CHANNEL and VW2SINGALG_CHAR_CHANNEL. Use mem_fence if you require source code-based ordering of channel operations. Channel depths cannot be optimized."}
+]}

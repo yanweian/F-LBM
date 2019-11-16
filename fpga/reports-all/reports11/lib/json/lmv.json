@@ -1,0 +1,1938 @@
+{
+  "nodes":
+  [
+    {
+      "type":"kernel"
+      , "id":33
+      , "name":"collision"
+      , "children":
+      [
+        {
+          "type":"inst"
+          , "id":36
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":341
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_cell"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":37
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":341
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_cell"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":38
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":341
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_cell"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":39
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":341
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_cell"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":40
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":341
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_cell"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":41
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":341
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_cell"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":42
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":341
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_cell"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":43
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":341
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_cell"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":44
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":341
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_cell"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":45
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":341
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_cell"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":46
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":341
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_cell"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":47
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":341
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_cell"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":48
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":341
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_cell"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":49
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":341
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_cell"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":52
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":353
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"local_cell"
+              , "Start Cycle":"15"
+              , "Latency":"3"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":53
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":354
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"local_cell"
+              , "Start Cycle":"15"
+              , "Latency":"3"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":54
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":358
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"local_cell"
+              , "Start Cycle":"32"
+              , "Latency":"3"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":55
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":358
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"local_cell"
+              , "Start Cycle":"32"
+              , "Latency":"3"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":56
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":358
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"local_cell"
+              , "Start Cycle":"32"
+              , "Latency":"3"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":57
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":358
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"local_cell"
+              , "Start Cycle":"32"
+              , "Latency":"3"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":61
+          , "name":"Local Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":62
+              , "name":"local_cell"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                    , "line":338
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":63
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":338
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":79
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":93
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"5"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":64
+                  , "name":"Bank 1"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":338
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":80
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":94
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"5"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":65
+                  , "name":"Bank 2"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":338
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":90
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":95
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"5"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":66
+                  , "name":"Bank 3"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":338
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":91
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":96
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"5"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":67
+                  , "name":"Bank 4"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":338
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":92
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":97
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"5"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":68
+                  , "name":"Bank 5"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":338
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":81
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":98
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"5"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":69
+                  , "name":"Bank 6"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":338
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":82
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":99
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"5"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":70
+                  , "name":"Bank 7"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":338
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":83
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":100
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"5"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":71
+                  , "name":"Bank 8"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":338
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":84
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":101
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"5"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":72
+                  , "name":"Bank 9"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":338
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":85
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":102
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"5"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":73
+                  , "name":"Bank 10"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":338
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":86
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":103
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"5"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":74
+                  , "name":"Bank 11"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":338
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":87
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":104
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"5"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":75
+                  , "name":"Bank 12"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":338
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":88
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":105
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"5"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":76
+                  , "name":"Bank 13"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":338
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":89
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":106
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"5"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":77
+                  , "name":"Bank 14"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":338
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":78
+                  , "name":"Bank 15"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":338
+                      }
+                    ]
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "details":
+                  [
+                    {
+                      "type":"brief"
+                      , "text":"56B requested\n320B implemented"
+                    }
+                  ]
+                  , "Requested size":"56 bytes"
+                  , "Implemented size":"320 bytes"
+                  , "Number of banks":"16"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"1 word"
+                  , "Total replication":"5"
+                  , "Additional Information":"Replicated 5 times to efficiently support multiple simultaneous workgroups"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":107
+      , "name":"edge"
+      , "children":
+      [
+        {
+          "type":"inst"
+          , "id":110
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":368
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"256 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_cell_edge"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":111
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":368
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"256 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_cell_edge"
+              , "Start Cycle":"2"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":112
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":373
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"local_cell_edge"
+              , "Start Cycle":"15"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":113
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":373
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"256 bits"
+              , "Type":"Local-pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"local_cell_edge"
+              , "Start Cycle":"15"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":117
+          , "name":"Local Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":118
+              , "name":"local_cell_edge"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                    , "line":366
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":119
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                        , "line":366
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":120
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":121
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":122
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":123
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n2 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"3"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "details":
+                  [
+                    {
+                      "type":"brief"
+                      , "text":"64B requested\n192B implemented"
+                    }
+                  ]
+                  , "Requested size":"64 bytes"
+                  , "Implemented size":"192 bytes"
+                  , "Number of banks":"1"
+                  , "Bank width":"256 bits"
+                  , "Bank depth":"2 words"
+                  , "Total replication":"3"
+                  , "Additional Information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Replicated 3 times to efficiently support multiple simultaneous workgroups"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Running memory at 2x clock to support more concurrent ports"
+                    }
+                  ]
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////root/intelFPGA_pro/19.1/hld/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":79
+      , "to":52
+    }
+    , {
+      "from":80
+      , "to":53
+    }
+    , {
+      "from":81
+      , "to":54
+    }
+    , {
+      "from":82
+      , "to":54
+    }
+    , {
+      "from":83
+      , "to":54
+    }
+    , {
+      "from":84
+      , "to":54
+    }
+    , {
+      "from":85
+      , "to":54
+    }
+    , {
+      "from":86
+      , "to":54
+    }
+    , {
+      "from":87
+      , "to":54
+    }
+    , {
+      "from":88
+      , "to":54
+    }
+    , {
+      "from":89
+      , "to":54
+    }
+    , {
+      "from":90
+      , "to":55
+    }
+    , {
+      "from":91
+      , "to":56
+    }
+    , {
+      "from":92
+      , "to":57
+    }
+    , {
+      "from":36
+      , "to":93
+    }
+    , {
+      "from":37
+      , "to":94
+    }
+    , {
+      "from":38
+      , "to":95
+    }
+    , {
+      "from":39
+      , "to":96
+    }
+    , {
+      "from":40
+      , "to":97
+    }
+    , {
+      "from":41
+      , "to":98
+    }
+    , {
+      "from":42
+      , "to":99
+    }
+    , {
+      "from":43
+      , "to":100
+    }
+    , {
+      "from":44
+      , "to":101
+    }
+    , {
+      "from":45
+      , "to":102
+    }
+    , {
+      "from":46
+      , "to":103
+    }
+    , {
+      "from":47
+      , "to":104
+    }
+    , {
+      "from":48
+      , "to":105
+    }
+    , {
+      "from":49
+      , "to":106
+    }
+    , {
+      "from":120
+      , "to":112
+    }
+    , {
+      "from":121
+      , "to":113
+    }
+    , {
+      "from":110
+      , "to":122
+    }
+    , {
+      "from":111
+      , "to":123
+    }
+  ]
+}

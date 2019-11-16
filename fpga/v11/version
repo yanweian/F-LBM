@@ -1,0 +1,29 @@
+v1 验证rho和u计算是否正确 success
+
+v2 验证碰撞计算是否正确 success
+
+v3 验证传播 success
+
+v4 验证channel success(释放内存出现错误，小问题)
+
+v5 内存释放错误是因为flag是ncell大小的不应该在i循环里  success
+
+v6 验证多次迭代融合
+    - 一次可以，是因为没有经过channel的回访
+    - 验证两次，失败，不可以用ndrange做循环读取channel的操作
+    - 验证single work item 并验证u success
+    - 编译出来不行
+    - 使用大范围ndrange
+
+v7 使用大范围ndrange，使用main控制
+
+如果group太多，使用阻塞方式的话就会卡死
+使用非阻塞方式会导致漏
+
+计算好group大小，使用阻塞方式
+
+v8 加入edge
+
+v9 5000 257*257 14s
+
+v10 新的结构

@@ -1,0 +1,10 @@
+{"rows":[
+{"details":["Compiler Warning: Functions  bu
+, cu and data_reader may form a cycle due to connectivity of channels BU2CU_CELLVECTOR_CHANNEL
+, BU2DR_CHAR_CHANNEL
+, CU2DR_CHAR_CHANNEL and DATAR2BU_CELLVECTOR_CHANNEL. Use mem_fence if you require source code-based ordering of channel operations. Channel depths cannot be optimized."]
+,"name":"Functions  bu
+, cu and data_reader may form a cycle due to connectivity of channels BU2CU_CELLVECTOR_CHANNEL
+, BU2DR_CHAR_CHANNEL
+, CU2DR_CHAR_CHANNEL and DATAR2BU_CELLVECTOR_CHANNEL. Use mem_fence if you require source code-based ordering of channel operations. Channel depths cannot be optimized."}
+]}

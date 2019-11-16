@@ -1,0 +1,11 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "pac": "javascript",
+        "sstream": "cpp",
+        "iostream": "cpp",
+        "vector": "cpp",
+        "xlocale": "cpp",
+        "cmath": "cpp"
+    }
+}

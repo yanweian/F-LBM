@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"classes":["info-table"],"data":["lbm"],"name":"Project Name"},
+{"data":["Arria 10, 10AX115S2F45I2SGES, f10a_sr2x8g:inspur_2bank_a10"],"name":"Target Family, Device, Board"},
+{"data":["19.1.0 Build 240"],"name":"AOC Version"},
+{"data":["19.1.0 Build 240 Pro"],"name":"Quartus Version"},
+{"data":["aoc -v -board=inspur_2bank_a10 device/lbm.cl -o bin/lbm_bin.aocx --report"],"name":"Command"},
+{"data":["Tue Oct  8 16:01:05 2019"],"name":"Reports Generated At"}
+]}

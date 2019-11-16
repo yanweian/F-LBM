@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "pac": "javascript",
+        "iostream": "cpp",
+        "ostream": "cpp"
+    }
+}

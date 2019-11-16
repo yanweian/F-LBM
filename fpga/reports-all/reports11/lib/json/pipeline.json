@@ -1,0 +1,6605 @@
+{
+  "4173453952":
+  {
+    "nodes":
+    [
+      {
+        "name":"Ptr. Comp."
+        , "id":4243589568
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":247
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f"
+        , "id":4243592160
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'f'"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":102
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":4243594960
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":311
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FFwd Dest"
+        , "id":4243597632
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"FFwd Destination"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":104
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"And"
+        , "id":4243600224
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit And"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":104
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Feedback"
+        , "id":4243600528
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Feedback Write"
+            , "Variable":"'x_edge,x,x,x_edge,x'"
+            , "Feedback FIFO Depth":"1"
+            , "Feedback FIFO Width":"32"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":104
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Loop Orch"
+        , "id":4243603120
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Loop Orchestration Logic"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":104
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Exit"
+        , "id":4243672112
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Exit"
+            , "Exit FIFO Depth":"16"
+            , "Exit FIFO Width":"448"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+            , "Cluster Type":"Stall-Free"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Entry"
+        , "id":4250824416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Cluster Type":"Stall-Free"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FFwd Dest"
+        , "id":4251997152
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"FFwd Destination"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":104
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Select"
+        , "id":4252002544
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"33-bit Select"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":104
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FFwd Dest"
+        , "id":4252002848
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"FFwd Destination"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":203
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":4252005024
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Add"
+            , "Constant Operand":"-1 (0xFFFFFFFF)"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":105
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Compare"
+        , "id":4252005328
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Compare"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":105
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FFwd Dest"
+        , "id":4252005632
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"FFwd Destination"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":98
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"*"
+        , "id":4252007808
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Multiply"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":98
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FFwd Dest"
+        , "id":4252008416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"FFwd Destination"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":4252011120
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":215
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FFwd Dest"
+        , "id":4252012880
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"FFwd Destination"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"*"
+        , "id":4252015056
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Multiply"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":98
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FFwd Dest"
+        , "id":4252015360
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"FFwd Destination"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":104
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"And"
+        , "id":4252017952
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit And"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":105
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"'x_edge,x,x,x_edge,x'"
+        , "id":4252018560
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Feedback Read"
+            , "Variable":"'x_edge,x,x,x_edge,x'"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":104
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":4252020944
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Add"
+            , "Constant Operand":"1 (0x1)"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":104
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"<<"
+        , "id":4252021248
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Left Shift"
+            , "Constant Operand":"3 (0x3)"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":104
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":4252022384
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":104
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":4252022688
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":98
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"<<"
+        , "id":4252022992
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Left Shift"
+            , "Constant Operand":"3 (0x3)"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":98
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":4252024128
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":98
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f"
+        , "id":4252024736
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'f'"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":102
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":4243589568
+        , "to":4243672112
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":4243592160
+        , "to":4243594960
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":4243594960
+        , "to":4243672112
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":4243597632
+        , "to":4243600224
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4243600224
+        , "to":4243600528
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4243600224
+        , "to":4243603120
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4243600224
+        , "to":4243672112
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4243600224
+        , "to":4252002544
+        , "reverse":1
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4243600528
+        , "to":4252018560
+        , "reverse":1
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4243603120
+        , "to":4243672112
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4250824416
+        , "to":4243672112
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"16"
+          }
+        ]
+      }
+      , {
+        "from":4250824416
+        , "to":4252002544
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"16"
+          }
+        ]
+      }
+      , {
+        "from":4250824416
+        , "to":4252018560
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"16"
+          }
+        ]
+      }
+      , {
+        "from":4251997152
+        , "to":4252002544
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"33"
+          }
+        ]
+      }
+      , {
+        "from":4252002544
+        , "to":4243600224
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"33"
+          }
+        ]
+      }
+      , {
+        "from":4252002544
+        , "to":4252002544
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"33"
+          }
+        ]
+      }
+      , {
+        "from":4252002848
+        , "to":4252005024
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252005024
+        , "to":4243672112
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252005024
+        , "to":4252005328
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252005024
+        , "to":4252007808
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252005024
+        , "to":4252015056
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252005328
+        , "to":4252017952
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4252005632
+        , "to":4252007808
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252007808
+        , "to":4252011120
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252008416
+        , "to":4252011120
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":4252011120
+        , "to":4243672112
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":4252012880
+        , "to":4252015056
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252015056
+        , "to":4252022688
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252015360
+        , "to":4252017952
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4252017952
+        , "to":4243672112
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4252018560
+        , "to":4243672112
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252018560
+        , "to":4252020944
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252020944
+        , "to":4243600528
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252020944
+        , "to":4243672112
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252020944
+        , "to":4252021248
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252020944
+        , "to":4252022384
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252020944
+        , "to":4252022688
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252021248
+        , "to":4252022384
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252022384
+        , "to":4243594960
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252022688
+        , "to":4252022992
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252022688
+        , "to":4252024128
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252022992
+        , "to":4252024128
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252024128
+        , "to":4243589568
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4252024736
+        , "to":4243589568
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+    ]
+  }
+  , "4174203808":
+  {
+    "nodes":
+    [
+      {
+        "name":"Entry"
+        , "id":4243668320
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Cluster Type":"Stall-Free"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FFwd Dest"
+        , "id":4251944784
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"FFwd Destination"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":104
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+    ]
+  }
+  , "4176141392":
+  {
+    "nodes":
+    [
+      {
+        "name":"Entry"
+        , "id":4237548064
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Cluster Type":"Stall-Free"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Or"
+        , "id":4251920336
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit Or"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":128
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":4251923376
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Constant Operand":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":118
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP *+"
+        , "id":4251923680
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-Point Multiply-Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":119
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":4251923984
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":118
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP *+"
+        , "id":4251924288
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-Point Multiply-Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":120
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":4251924592
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":118
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP Dot-2"
+        , "id":4251925504
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-Point Dot Product of Size 2"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":119
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":4251926352
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":118
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP -"
+        , "id":4251926656
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Sub"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":119
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP Dot-2"
+        , "id":4251927568
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-Point Dot Product of Size 2"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":120
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":4251928496
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":118
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP *+"
+        , "id":4251928800
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-Point Multiply-Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":119
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP -"
+        , "id":4251929104
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Sub"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":120
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":4251929408
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":118
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":4251929712
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":119
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":4251930016
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":120
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":4251930320
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":118
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP -"
+        , "id":4251930624
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Sub"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":119
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":4251930928
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":120
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":4251931232
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":118
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP -"
+        , "id":4251931536
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Sub"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":119
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP -"
+        , "id":4251931840
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Sub"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":120
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":4251932144
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":118
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":4251932448
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":119
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP -"
+        , "id":4251932752
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Sub"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":120
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FP /"
+        , "id":4251933056
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Floating-point Divide"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":122
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FP /"
+        , "id":4251933360
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Floating-point Divide"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":123
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Exit"
+        , "id":4253759760
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Exit"
+            , "Exit FIFO Depth":"64"
+            , "Exit FIFO Width":"1824"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+            , "Cluster Type":"Stall-Free"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":4237548064
+        , "to":4251920336
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251923376
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251923680
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251923984
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251924288
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251924592
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251925504
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251926352
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251926656
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251927568
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251928496
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251928800
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251929104
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251929408
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251929712
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251930016
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251930320
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251930624
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251930928
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251931232
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251931536
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251931840
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251932144
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251932448
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4251932752
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4237548064
+        , "to":4253759760
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"704"
+          }
+        ]
+      }
+      , {
+        "from":4251920336
+        , "to":4253759760
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4251923376
+        , "to":4251923984
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251923680
+        , "to":4251924288
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251923680
+        , "to":4251925504
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251923984
+        , "to":4251924592
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251924288
+        , "to":4251927568
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251924592
+        , "to":4251926352
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251925504
+        , "to":4251926656
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251926352
+        , "to":4251928496
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251926656
+        , "to":4251928800
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251927568
+        , "to":4251929104
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251928496
+        , "to":4251929408
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251928800
+        , "to":4251929712
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251929104
+        , "to":4251930016
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251929408
+        , "to":4251930320
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251929712
+        , "to":4251930624
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251930016
+        , "to":4251930928
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251930320
+        , "to":4251931232
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251930624
+        , "to":4251931536
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251930928
+        , "to":4251931840
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251931232
+        , "to":4251932144
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251931536
+        , "to":4251932448
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251931840
+        , "to":4251932752
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251932144
+        , "to":4251933056
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251932144
+        , "to":4251933360
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251932144
+        , "to":4253759760
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251932448
+        , "to":4251933056
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251932752
+        , "to":4251933360
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251933056
+        , "to":4253759760
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4251933360
+        , "to":4253759760
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+    ]
+  }
+  , "4206784976":
+  {
+    "nodes":
+    [
+      {
+        "name":"Entry"
+        , "id":4181511248
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Cluster Type":"Stall-Free"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"nx"
+        , "id":4181512464
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'nx'"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":94
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"*"
+        , "id":4181514640
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Multiply"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":95
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":4181514944
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":95
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"u"
+        , "id":4181515552
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'u'"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":376
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":4181518352
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":380
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Exit"
+        , "id":4251989184
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Exit"
+            , "Exit FIFO Depth":"16"
+            , "Exit FIFO Width":"128"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+            , "Cluster Type":"Stall-Free"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":4181511248
+        , "to":4181514640
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"160"
+          }
+        ]
+      }
+      , {
+        "from":4181511248
+        , "to":4181514944
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"160"
+          }
+        ]
+      }
+      , {
+        "from":4181512464
+        , "to":4181514640
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4181514640
+        , "to":4181514944
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4181514944
+        , "to":4181518352
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4181515552
+        , "to":4181518352
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":4181518352
+        , "to":4251989184
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+    ]
+  }
+  , "4209354816":
+  {
+    "nodes":
+    [
+      {
+        "name":"Loop Orch"
+        , "id":4181496928
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Loop Orchestration Logic"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":378
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Entry"
+        , "id":4249853328
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Cluster Type":"Stall-Free"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Xor"
+        , "id":4249857040
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit Xor"
+            , "Constant Operand":"1 (0x1)"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":378
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FFwd Dest"
+        , "id":4249872064
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"FFwd Destination"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":376
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FFwd Dest"
+        , "id":4249874240
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"FFwd Destination"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":378
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Select"
+        , "id":4249879632
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"33-bit Select"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":381
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FFwd Dest"
+        , "id":4249879936
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"FFwd Destination"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":378
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Or"
+        , "id":4249882528
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit Or"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":378
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FFwd Dest"
+        , "id":4249886976
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"FFwd Destination"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":378
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"And"
+        , "id":4249889568
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit And"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":378
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Xor"
+        , "id":4252137744
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit Xor"
+            , "Constant Operand":"1 (0x1)"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":378
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Exit"
+        , "id":4252162368
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Exit"
+            , "Exit FIFO Depth":"4"
+            , "Exit FIFO Width":"32"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+            , "Cluster Type":"Stall-Free"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":4181496928
+        , "to":4249857040
+        , "reverse":1
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4181496928
+        , "to":4249879632
+        , "reverse":1
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4181496928
+        , "to":4252162368
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4249853328
+        , "to":4181496928
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"16"
+          }
+        ]
+      }
+      , {
+        "from":4249853328
+        , "to":4249879632
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"16"
+          }
+        ]
+      }
+      , {
+        "from":4249853328
+        , "to":4252162368
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"16"
+          }
+        ]
+      }
+      , {
+        "from":4249857040
+        , "to":4181496928
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4249857040
+        , "to":4249882528
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4249874240
+        , "to":4249879632
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"33"
+          }
+        ]
+      }
+      , {
+        "from":4249879632
+        , "to":4249879632
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"33"
+          }
+        ]
+      }
+      , {
+        "from":4249879632
+        , "to":4249889568
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"33"
+          }
+        ]
+      }
+      , {
+        "from":4249879936
+        , "to":4252137744
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4249882528
+        , "to":4252162368
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4249886976
+        , "to":4249889568
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4249889568
+        , "to":4181496928
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4249889568
+        , "to":4249879632
+        , "reverse":1
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4249889568
+        , "to":4252162368
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4252137744
+        , "to":4249882528
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+    ]
+  }
+  , "4224704048":
+  {
+    "nodes":
+    [
+      {
+        "name":"+"
+        , "id":4180400896
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Add"
+            , "Constant Operand":"-1 (0xFFFFFFFF)"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":355
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Compare"
+        , "id":4180401200
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Compare"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":355
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"nx"
+        , "id":4180401504
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'nx'"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":97
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"*"
+        , "id":4180403680
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Multiply"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":98
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":4180403984
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":98
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"<<"
+        , "id":4180404288
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Left Shift"
+            , "Constant Operand":"3 (0x3)"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":98
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":4180405424
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":98
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":4180405728
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":98
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":4180406032
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":358
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"And"
+        , "id":4180408416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit And"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":355
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"And"
+        , "id":4180408720
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit And"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":355
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"And"
+        , "id":4180409024
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit And"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":355
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Xor"
+        , "id":4180409328
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit Xor"
+            , "Constant Operand":"1 (0x1)"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":355
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"LD"
+        , "id":4180409632
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Load"
+            , "Width":"32 bits"
+            , "LSU Style":"Local-pipelined never-stall"
+            , "Start Cycle":"32"
+            , "Latency":"3"
+            , "Stall-free":"Yes"
+            , "Global Memory":"No"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":358
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"wg.limiter.exit"
+        , "id":4180415040
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"wg.limiter.exit"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":358
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"LD"
+        , "id":4180416800
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Load"
+            , "Width":"32 bits"
+            , "LSU Style":"Local-pipelined never-stall"
+            , "Start Cycle":"32"
+            , "Latency":"3"
+            , "Stall-free":"Yes"
+            , "Global Memory":"No"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":358
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"wg.limiter.exit"
+        , "id":4180421680
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"wg.limiter.exit"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":358
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":4180423440
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":358
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"ROM Lookup"
+        , "id":4180425504
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"On-chip Read-Only Memory Lookup"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":358
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"LD"
+        , "id":4180427568
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Load"
+            , "Width":"32 bits"
+            , "LSU Style":"Local-pipelined never-stall"
+            , "Start Cycle":"32"
+            , "Latency":"3"
+            , "Stall-free":"Yes"
+            , "Global Memory":"No"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":358
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"wg.limiter.exit"
+        , "id":4180432976
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"wg.limiter.exit"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":358
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"LD"
+        , "id":4180434736
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Load"
+            , "Width":"32 bits"
+            , "LSU Style":"Local-pipelined never-stall"
+            , "Start Cycle":"32"
+            , "Latency":"3"
+            , "Stall-free":"Yes"
+            , "Global Memory":"No"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":358
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"wg.limiter.exit"
+        , "id":4180439616
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"wg.limiter.exit"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":358
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP *"
+        , "id":4180441376
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Multiply"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":63
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP Dot-2"
+        , "id":4180442896
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-Point Dot Product of Size 2"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":54
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP *"
+        , "id":4180443824
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Multiply"
+            , "Constant Operand":"4.5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":64
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP Dot-2"
+        , "id":4180445344
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-Point Dot Product of Size 2"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":64
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP Dot-2"
+        , "id":4180447488
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-Point Dot Product of Size 2"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":54
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP *"
+        , "id":4180448416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Multiply"
+            , "Constant Operand":"1.5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":65
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP *"
+        , "id":4180448720
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Multiply"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":63
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP -"
+        , "id":4180449024
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Sub"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":78
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"tau"
+        , "id":4180449328
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'tau'"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":75
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"LD"
+        , "id":4239750800
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Load"
+            , "Width":"32 bits"
+            , "LSU Style":"Local-pipelined never-stall"
+            , "Start Cycle":"15"
+            , "Latency":"3"
+            , "Stall-free":"Yes"
+            , "Global Memory":"No"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":353
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"wg.limiter.exit"
+        , "id":4239756336
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"wg.limiter.exit"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":353
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Convert"
+        , "id":4239758096
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer to Floating-point Conversion"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":353
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":4239758704
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":353
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"ROM Lookup"
+        , "id":4239760464
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"On-chip Read-Only Memory Lookup"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":353
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":4239761808
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":353
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Convert"
+        , "id":4239762112
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point to Integer Conversion"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":353
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"LD"
+        , "id":4239762416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Load"
+            , "Width":"32 bits"
+            , "LSU Style":"Local-pipelined never-stall"
+            , "Start Cycle":"15"
+            , "Latency":"3"
+            , "Stall-free":"Yes"
+            , "Global Memory":"No"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":354
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"wg.limiter.exit"
+        , "id":4239767504
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"wg.limiter.exit"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":354
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Convert"
+        , "id":4239769264
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer to Floating-point Conversion"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":354
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":4239769568
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":354
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"ROM Lookup"
+        , "id":4239771952
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"On-chip Read-Only Memory Lookup"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":354
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":4239773824
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":354
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Convert"
+        , "id":4239774128
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point to Integer Conversion"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":354
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Compare"
+        , "id":4239774432
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Compare"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":355
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"nx"
+        , "id":4239774736
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'nx'"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":97
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":4239776912
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Add"
+            , "Constant Operand":"-1 (0xFFFFFFFF)"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":355
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Compare"
+        , "id":4239777216
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Compare"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":355
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"ny"
+        , "id":4239777520
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'ny'"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":335
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP *"
+        , "id":4249491088
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Multiply"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":78
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP -"
+        , "id":4249491392
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Sub"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":78
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f_next"
+        , "id":4249492000
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'f_next'"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":334
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":4249494800
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":358
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Exit"
+        , "id":4249907312
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Exit"
+            , "Exit FIFO Depth":"64"
+            , "Exit FIFO Width":"128"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+            , "Cluster Type":"Stall-Free"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP -"
+        , "id":4251292208
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Sub"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":65
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Entry"
+        , "id":4253751168
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Cluster Type":"Stall-Free"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Compare"
+        , "id":4253763328
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Compare"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":355
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":4180400896
+        , "to":4180401200
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180401200
+        , "to":4180408416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4180401504
+        , "to":4180403680
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180403680
+        , "to":4180403984
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180403984
+        , "to":4180404288
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180403984
+        , "to":4180405424
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180404288
+        , "to":4180405424
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180405424
+        , "to":4180405728
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180405728
+        , "to":4249494800
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180406032
+        , "to":4180409632
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":4180408416
+        , "to":4180409024
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4180408720
+        , "to":4180409024
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4180409024
+        , "to":4180409328
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4180409328
+        , "to":4180409632
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4180409328
+        , "to":4180416800
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4180409328
+        , "to":4180427568
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4180409328
+        , "to":4180434736
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4180409328
+        , "to":4249907312
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4180409632
+        , "to":4180449024
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180409632
+        , "to":4249491392
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180416800
+        , "to":4180441376
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180423440
+        , "to":4180425504
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":4180425504
+        , "to":4180441376
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180427568
+        , "to":4180442896
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180427568
+        , "to":4180447488
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180434736
+        , "to":4180442896
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180434736
+        , "to":4180447488
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180441376
+        , "to":4180448720
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180442896
+        , "to":4180443824
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180442896
+        , "to":4180445344
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180443824
+        , "to":4180445344
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180445344
+        , "to":4251292208
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180447488
+        , "to":4180448416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180448416
+        , "to":4251292208
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180448720
+        , "to":4180449024
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180449024
+        , "to":4249491088
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4180449328
+        , "to":4249491088
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4239750800
+        , "to":4239758096
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4239758096
+        , "to":4239761808
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4239758704
+        , "to":4239760464
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":4239760464
+        , "to":4180442896
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4239760464
+        , "to":4239761808
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4239761808
+        , "to":4239762112
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4239762112
+        , "to":4180403984
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4239762112
+        , "to":4239774432
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4239762112
+        , "to":4253763328
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4239762416
+        , "to":4239769264
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4239769264
+        , "to":4239773824
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4239769568
+        , "to":4239771952
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":4239771952
+        , "to":4180442896
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4239771952
+        , "to":4239773824
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4239773824
+        , "to":4239774128
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4239774128
+        , "to":4180401200
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4239774128
+        , "to":4180403680
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4239774128
+        , "to":4239777216
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4239774432
+        , "to":4180408416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4239774736
+        , "to":4239776912
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4239776912
+        , "to":4253763328
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4239777216
+        , "to":4180408720
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":4239777520
+        , "to":4180400896
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249491088
+        , "to":4249491392
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249491392
+        , "to":4249907312
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249492000
+        , "to":4249494800
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":4249494800
+        , "to":4249907312
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":4251292208
+        , "to":4180448720
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4253751168
+        , "to":4180405728
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"832"
+          }
+        ]
+      }
+      , {
+        "from":4253751168
+        , "to":4180406032
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"832"
+          }
+        ]
+      }
+      , {
+        "from":4253751168
+        , "to":4180409632
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"832"
+          }
+        ]
+      }
+      , {
+        "from":4253751168
+        , "to":4180415040
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"832"
+          }
+        ]
+      }
+      , {
+        "from":4253751168
+        , "to":4180416800
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"832"
+          }
+        ]
+      }
+      , {
+        "from":4253751168
+        , "to":4180421680
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"832"
+          }
+        ]
+      }
+      , {
+        "from":4253751168
+        , "to":4180423440
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"832"
+          }
+        ]
+      }
+      , {
+        "from":4253751168
+        , "to":4180427568
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"832"
+          }
+        ]
+      }
+      , {
+        "from":4253751168
+        , "to":4180432976
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"832"
+          }
+        ]
+      }
+      , {
+        "from":4253751168
+        , "to":4180434736
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"832"
+          }
+        ]
+      }
+      , {
+        "from":4253751168
+        , "to":4180439616
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"832"
+          }
+        ]
+      }
+      , {
+        "from":4253751168
+        , "to":4239750800
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"832"
+          }
+        ]
+      }
+      , {
+        "from":4253751168
+        , "to":4239756336
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"832"
+          }
+        ]
+      }
+      , {
+        "from":4253751168
+        , "to":4239758704
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"832"
+          }
+        ]
+      }
+      , {
+        "from":4253751168
+        , "to":4239762416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"832"
+          }
+        ]
+      }
+      , {
+        "from":4253751168
+        , "to":4239767504
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"832"
+          }
+        ]
+      }
+      , {
+        "from":4253751168
+        , "to":4239769568
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"832"
+          }
+        ]
+      }
+      , {
+        "from":4253763328
+        , "to":4180408720
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+    ]
+  }
+  , "4232715920":
+  {
+    "nodes":
+    [
+      {
+        "name":"Entry"
+        , "id":4249503120
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Cluster Type":"Stall-Free"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":4249504640
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":373
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"LD"
+        , "id":4249507024
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Load"
+            , "Width":"32 bits"
+            , "LSU Style":"Local-pipelined never-stall"
+            , "Start Cycle":"15"
+            , "Latency":"4"
+            , "Stall-free":"Yes"
+            , "Global Memory":"No"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":373
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"LD"
+        , "id":4249512640
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Load"
+            , "Width":"256 bits"
+            , "LSU Style":"Local-pipelined never-stall"
+            , "Start Cycle":"15"
+            , "Latency":"4"
+            , "Stall-free":"Yes"
+            , "Global Memory":"No"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":373
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"wg.limiter.exit"
+        , "id":4249521056
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"wg.limiter.exit"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":373
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":4249525552
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":373
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"ROM Lookup"
+        , "id":4249527232
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"On-chip Read-Only Memory Lookup"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":373
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":4249528576
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":373
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"ROM Lookup"
+        , "id":4249530336
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"On-chip Read-Only Memory Lookup"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":373
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":4249531680
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":373
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"ROM Lookup"
+        , "id":4249534064
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"On-chip Read-Only Memory Lookup"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":373
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP *"
+        , "id":4249535408
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Multiply"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":63
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP Dot-2"
+        , "id":4249536928
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-Point Dot Product of Size 2"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":54
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP *"
+        , "id":4249537856
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Multiply"
+            , "Constant Operand":"4.5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":64
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP Dot-2"
+        , "id":4249539376
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-Point Dot Product of Size 2"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":64
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP Dot-2"
+        , "id":4249541520
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-Point Dot Product of Size 2"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":54
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP *"
+        , "id":4249542448
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Multiply"
+            , "Constant Operand":"1.5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":65
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP -"
+        , "id":4249542752
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Sub"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":65
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP Dot-2"
+        , "id":4249544272
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-Point Dot Product of Size 2"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":54
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP *"
+        , "id":4249545200
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Multiply"
+            , "Constant Operand":"4.5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":64
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP Dot-2"
+        , "id":4249830480
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-Point Dot Product of Size 2"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":64
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP Dot-2"
+        , "id":4249832320
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-Point Dot Product of Size 2"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":54
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP *"
+        , "id":4249833248
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Multiply"
+            , "Constant Operand":"1.5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":65
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP -"
+        , "id":4249833552
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Sub"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":65
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP *"
+        , "id":4249833856
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Multiply"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":63
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP -"
+        , "id":4249834160
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Sub"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":91
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP *+"
+        , "id":4249834464
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-Point Multiply-Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":91
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"nx"
+        , "id":4249834768
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'nx'"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":97
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"*"
+        , "id":4249837472
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Multiply"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":98
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":4249837776
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":98
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"<<"
+        , "id":4249838080
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Left Shift"
+            , "Constant Operand":"3 (0x3)"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":98
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":4249839216
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":98
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":4249839520
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Add"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":98
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f_next"
+        , "id":4249840128
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'f_next'"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":363
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":4249842928
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+              , "line":373
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"__acl_local_size_0"
+        , "id":4249844688
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for '__acl_local_size_0'"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Exit"
+        , "id":4252142496
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Exit"
+            , "Exit FIFO Depth":"64"
+            , "Exit FIFO Width":"192"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+            , "Cluster Type":"Stall-Free"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":4249503120
+        , "to":4249504640
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"256"
+          }
+        ]
+      }
+      , {
+        "from":4249503120
+        , "to":4249507024
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"256"
+          }
+        ]
+      }
+      , {
+        "from":4249503120
+        , "to":4249512640
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"256"
+          }
+        ]
+      }
+      , {
+        "from":4249503120
+        , "to":4249521056
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"256"
+          }
+        ]
+      }
+      , {
+        "from":4249503120
+        , "to":4249525552
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"256"
+          }
+        ]
+      }
+      , {
+        "from":4249503120
+        , "to":4249528576
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"256"
+          }
+        ]
+      }
+      , {
+        "from":4249503120
+        , "to":4249531680
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"256"
+          }
+        ]
+      }
+      , {
+        "from":4249503120
+        , "to":4249839520
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"256"
+          }
+        ]
+      }
+      , {
+        "from":4249504640
+        , "to":4249507024
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":4249507024
+        , "to":4249834160
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249512640
+        , "to":4249535408
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"256"
+          }
+        ]
+      }
+      , {
+        "from":4249512640
+        , "to":4249536928
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"256"
+          }
+        ]
+      }
+      , {
+        "from":4249512640
+        , "to":4249541520
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"256"
+          }
+        ]
+      }
+      , {
+        "from":4249512640
+        , "to":4249544272
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"256"
+          }
+        ]
+      }
+      , {
+        "from":4249512640
+        , "to":4249832320
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"256"
+          }
+        ]
+      }
+      , {
+        "from":4249512640
+        , "to":4249837472
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"256"
+          }
+        ]
+      }
+      , {
+        "from":4249512640
+        , "to":4249837776
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"256"
+          }
+        ]
+      }
+      , {
+        "from":4249525552
+        , "to":4249527232
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":4249527232
+        , "to":4249535408
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249528576
+        , "to":4249530336
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":4249530336
+        , "to":4249536928
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249530336
+        , "to":4249544272
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249531680
+        , "to":4249534064
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":4249534064
+        , "to":4249536928
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249534064
+        , "to":4249544272
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249535408
+        , "to":4249833856
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249535408
+        , "to":4249834464
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249536928
+        , "to":4249537856
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249536928
+        , "to":4249539376
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249537856
+        , "to":4249539376
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249539376
+        , "to":4249542752
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249541520
+        , "to":4249542448
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249542448
+        , "to":4249542752
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249542752
+        , "to":4249834464
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249544272
+        , "to":4249545200
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249544272
+        , "to":4249830480
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249545200
+        , "to":4249830480
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249830480
+        , "to":4249833552
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249832320
+        , "to":4249833248
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249833248
+        , "to":4249833552
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249833552
+        , "to":4249833856
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249833856
+        , "to":4249834160
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249834160
+        , "to":4249834464
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249834464
+        , "to":4252142496
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249834768
+        , "to":4249837472
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249837472
+        , "to":4249837776
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249837776
+        , "to":4249838080
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249837776
+        , "to":4249839216
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249838080
+        , "to":4249839216
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249839216
+        , "to":4249839520
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249839520
+        , "to":4249842928
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":4249840128
+        , "to":4249842928
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":4249842928
+        , "to":4252142496
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":4249844688
+        , "to":4252142496
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "nodes":
+  [
+    {
+      "name":"edge"
+      , "id":4167827752
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"edge.B0"
+          , "id":4168304752
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 4"
+              , "id":4232715920
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"lbm"
+      , "id":4167781624
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"lbm.B3"
+          , "id":4167861088
+          , "type":"bb"
+        }
+        , {
+          "name":"lbm.B1"
+          , "id":4167860064
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":4173453952
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"lbm.B4"
+          , "id":4167775264
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 1"
+              , "id":4174203808
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 2"
+              , "id":4176141392
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"lbm.B0"
+          , "id":4167874336
+          , "type":"bb"
+        }
+        , {
+          "name":"lbm.B2"
+          , "id":4167861008
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"writeU"
+      , "id":4167832504
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"writeU.B0"
+          , "id":4168389296
+          , "type":"bb"
+        }
+        , {
+          "name":"writeU.B2"
+          , "id":4168399472
+          , "type":"bb"
+        }
+        , {
+          "name":"writeU.B1"
+          , "id":4168399392
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 5"
+              , "id":4209354816
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 6"
+              , "id":4206784976
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"collision"
+      , "id":4167820600
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"collision.B0"
+          , "id":4168163856
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 3"
+              , "id":4224704048
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

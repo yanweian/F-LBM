@@ -1,0 +1,304 @@
+{
+  "basicblocks":
+  {
+    "lbm.B0":
+    {
+      "name":"lbm.B0"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":3
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "lbm.B1":
+    {
+      "name":"lbm.B1"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":10
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"No"
+      , "loop_layer":1
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":"104"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "lbm.B2":
+    {
+      "name":"lbm.B2"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":0
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":1
+      , "loop_location":
+      {
+      }
+    }
+    , "lbm.B3":
+    {
+      "name":"lbm.B3"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":0
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "lbm.B4":
+    {
+      "name":"lbm.B4"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":8
+      , "latency":308
+      , "max_interleaving":8
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":2
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":"105"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "collision.B0":
+    {
+      "name":"collision.B0"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":73
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "edge.B0":
+    {
+      "name":"edge.B0"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":55
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "writeU.B0":
+    {
+      "name":"writeU.B0"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":3
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "writeU.B1":
+    {
+      "name":"writeU.B1"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":15
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":1
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+                , "line":"378"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "writeU.B2":
+    {
+      "name":"writeU.B2"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":0
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+  }
+  , "functions":
+  {
+    "lbm":
+    {
+      "debug":
+      [
+        {
+          "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+          , "line":102
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "lbm__no_loop":
+        [
+          "lbm.B0"
+          , "lbm.B3"
+        ]
+        , "lbm.B1":
+        [
+          "lbm.B1"
+          , "lbm.B4"
+          , "lbm.B2"
+        ]
+        , "lbm.B4":
+        [
+          "lbm.B4"
+        ]
+      }
+    }
+    , "collision":
+    {
+      "debug":
+      [
+        {
+          "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+          , "line":334
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "collision__no_loop":
+        [
+          "collision.B0"
+        ]
+      }
+    }
+    , "edge":
+    {
+      "debug":
+      [
+        {
+          "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+          , "line":363
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "edge__no_loop":
+        [
+          "edge.B0"
+        ]
+      }
+    }
+    , "writeU":
+    {
+      "debug":
+      [
+        {
+          "filename":"/root/yan/lbm/fpga/v11/device/lbm.cl"
+          , "line":376
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "writeU__no_loop":
+        [
+          "writeU.B0"
+          , "writeU.B2"
+        ]
+        , "writeU.B1":
+        [
+          "writeU.B1"
+        ]
+      }
+    }
+  }
+}
